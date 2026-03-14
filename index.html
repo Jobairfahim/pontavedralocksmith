@@ -1,0 +1,2128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Car Key Replacement Ponta Vedra – Fast, mobile automotive key replacement and programming service. Lost car keys, smart keys, fob programming, ignition repair. Serving Jacksonville and surrounding areas.">
+<title>Car Key Replacement Ponte Vedra | Mobile Auto Key Service</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  /* ===== RESET & BASE ===== */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; font-size: 16px; }
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: #060d18;
+    color: #e4eef8;
+    overflow-x: hidden;
+    line-height: 1.6;
+  }
+  img { max-width: 100%; display: block; }
+  a { text-decoration: none; color: inherit; }
+  ul { list-style: none; }
+
+  /* ===== CSS VARIABLES ===== */
+  :root {
+    --gold: #00c8e0;
+    --gold-light: #40dff0;
+    --gold-dim: rgba(0,200,224,0.12);
+    --dark: #060d18;
+    --dark2: #0b1525;
+    --dark3: #101e30;
+    --dark4: #172438;
+    --text: #e4eef8;
+    --text-muted: #7a9ab8;
+    --border: rgba(0,200,224,0.22);
+    --radius: 4px;
+    --shadow: 0 8px 40px rgba(0,0,0,0.7);
+    --accent2: #ff6b2b;
+  }
+
+  /* ===== SCROLLBAR ===== */
+  ::-webkit-scrollbar { width: 6px; }
+  ::-webkit-scrollbar-track { background: var(--dark); }
+  ::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 3px; }
+
+  /* ===== UTILITY ===== */
+  .container { max-width: 1160px; margin: 0 auto; padding: 0 24px; }
+  .gold { color: var(--gold); }
+  .section-tag {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold);
+    border: 1px solid var(--border);
+    padding: 4px 14px;
+    border-radius: 20px;
+    margin-bottom: 16px;
+    background: var(--gold-dim);
+  }
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 16px;
+  }
+  .section-sub {
+    color: var(--text-muted);
+    font-size: 1rem;
+    max-width: 600px;
+    line-height: 1.7;
+  }
+  .btn-gold {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--gold);
+    color: #060d18;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 0.9rem;
+    letter-spacing: 0.04em;
+    padding: 14px 28px;
+    border-radius: var(--radius);
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+  }
+  .btn-gold:hover { background: var(--gold-light); transform: translateY(-1px); }
+  .btn-outline {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: transparent;
+    color: var(--gold);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+    font-size: 0.9rem;
+    letter-spacing: 0.04em;
+    padding: 13px 28px;
+    border-radius: var(--radius);
+    border: 1px solid var(--gold);
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+  }
+  .btn-outline:hover { background: var(--gold-dim); transform: translateY(-1px); }
+  .divider { width: 60px; height: 3px; background: var(--gold); margin: 20px 0; border-radius: 2px; }
+
+  /* ===== NOISE OVERLAY ===== */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='1'/%3E%3C/svg%3E");
+    opacity: 0.025;
+    pointer-events: none;
+    z-index: 9999;
+  }
+
+  /* ===== NAVBAR ===== */
+  #navbar {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    padding: 0 24px;
+    transition: background 0.3s, box-shadow 0.3s;
+  }
+  #navbar.scrolled {
+    background: rgba(6,13,24,0.97);
+    box-shadow: 0 2px 30px rgba(0,0,0,0.8);
+    border-bottom: 1px solid var(--border);
+  }
+  .nav-inner {
+    max-width: 1160px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    height: 72px;
+  }
+  .nav-links-wrap {
+    display: flex;
+    justify-content: center;
+  }
+  .nav-logo {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+  }
+  .nav-logo .logo-top {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--gold);
+    letter-spacing: 0.02em;
+  }
+  .nav-logo .logo-bot {
+    font-size: 0.65rem;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+  }
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .nav-links a {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #c8ddf0;
+    padding: 8px 16px;
+    border-radius: var(--radius);
+    transition: color 0.2s;
+    letter-spacing: 0.02em;
+  }
+  .nav-links a:hover { color: #ffffff; }
+  .nav-right-slot {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .nav-cta {
+    font-size: 0.88rem !important;
+    font-weight: 600 !important;
+    color: #060d18 !important;
+    background: var(--gold) !important;
+    padding: 9px 22px !important;
+    border-radius: var(--radius) !important;
+    transition: background 0.2s !important;
+  }
+  .nav-cta:hover { background: var(--gold-light) !important; }
+
+  /* Services Dropdown */
+  .nav-dropdown {
+    position: relative;
+  }
+  .nav-dropdown > a {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .nav-dropdown > a svg {
+    transition: transform 0.2s;
+  }
+  .nav-dropdown:hover > a svg { transform: rotate(180deg); }
+  .dropdown-menu {
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 50%;
+    transform: translateX(-50%);
+    background: #101e30;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 8px;
+    min-width: 240px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-50%) translateY(-6px);
+    transition: opacity 0.2s, transform 0.2s, visibility 0.2s;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.9);
+  }
+  .nav-dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+  }
+  .dropdown-menu a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 14px !important;
+    border-radius: 5px;
+    font-size: 0.84rem !important;
+    color: var(--text-muted) !important;
+    transition: background 0.15s, color 0.15s !important;
+    background: transparent !important;
+  }
+  .dropdown-menu a:hover { background: var(--gold-dim) !important; color: var(--gold) !important; }
+  .dropdown-menu a .d-icon { font-size: 1rem; width: 20px; text-align: center; }
+
+  /* Mobile nav toggle */
+  .nav-hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    padding: 8px;
+    border: none;
+    background: none;
+  }
+  .nav-hamburger span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: var(--text);
+    border-radius: 2px;
+    transition: transform 0.3s, opacity 0.3s;
+  }
+  .nav-hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .nav-hamburger.open span:nth-child(2) { opacity: 0; }
+  .nav-hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+  /* Mobile menu */
+  .mobile-menu {
+    position: fixed;
+    top: 72px; left: 0; right: 0;
+    background: rgba(14,14,14,0.98);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    padding: 20px 24px;
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    z-index: 999;
+    transform: translateY(-10px);
+    opacity: 0;
+    transition: transform 0.3s, opacity 0.3s;
+  }
+  .mobile-menu.open { display: flex; transform: translateY(0); opacity: 1; }
+  .mobile-menu a {
+    padding: 12px 14px;
+    border-radius: var(--radius);
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--text-muted);
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+    transition: color 0.2s, background 0.2s;
+  }
+  .mobile-menu a:hover { color: var(--gold); background: var(--gold-dim); }
+  .mobile-sub-link {
+    font-size: 0.88rem !important;
+    color: #8ab0cc !important;
+    padding-left: 28px !important;
+    border-bottom: 1px solid rgba(255,255,255,0.03) !important;
+  }
+  .mobile-cta-row { display: flex; gap: 10px; margin-top: 12px; flex-wrap: wrap; }
+  .mobile-cta-row a {
+    flex: 1;
+    text-align: center;
+    min-width: 140px;
+    border-bottom: none !important;
+  }
+  .mobile-cta-row .btn-gold { justify-content: center; }
+
+  /* ===== HERO ===== */
+  #home {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    padding-top: 72px;
+  }
+  .hero-bg {
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 60% 50% at 70% 50%, rgba(0,200,224,0.07) 0%, transparent 70%),
+      radial-gradient(ellipse 40% 60% at 20% 80%, rgba(0,120,200,0.05) 0%, transparent 60%),
+      linear-gradient(180deg, #060d18 0%, #0b1525 100%);
+  }
+  .hero-grid {
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(0,200,224,0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0,200,224,0.04) 1px, transparent 1px);
+    background-size: 60px 60px;
+    mask-image: radial-gradient(ellipse 80% 80% at 70% 50%, black 0%, transparent 100%);
+  }
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 80px 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+  }
+  .hero-left { animation: fadeUp 0.8s ease forwards; }
+  .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--gold-dim);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 6px 16px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 24px;
+  }
+  .hero-badge .pulse {
+    width: 8px; height: 8px;
+    background: #4ade80;
+    border-radius: 50%;
+    animation: pulse 1.5s infinite;
+  }
+  .hero-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.4rem, 5vw, 4rem);
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 20px;
+  }
+  .hero-title em {
+    font-style: italic;
+    color: var(--gold);
+    display: block;
+  }
+  .hero-desc {
+    color: var(--text-muted);
+    font-size: 1.05rem;
+    line-height: 1.75;
+    margin-bottom: 36px;
+    max-width: 480px;
+  }
+  .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; }
+  .hero-stats {
+    display: flex;
+    gap: 32px;
+    margin-top: 40px;
+    padding-top: 32px;
+    border-top: 1px solid var(--border);
+    flex-wrap: wrap;
+  }
+  .hero-stat .num {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--gold);
+    line-height: 1;
+  }
+  .hero-stat .lbl {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-top: 4px;
+    font-weight: 500;
+  }
+  .hero-right {
+    animation: fadeUp 0.8s 0.15s ease both;
+  }
+  .hero-card {
+    background: var(--dark3);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 32px;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  }
+  .hero-card-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+  .hero-card-sub { font-size: 0.82rem; color: var(--text-muted); margin-bottom: 24px; }
+  .service-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 24px;
+  }
+  .chip {
+    background: var(--dark4);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 6px 14px;
+    font-size: 0.78rem;
+    font-weight: 500;
+    color: var(--text-muted);
+    transition: border-color 0.2s, color 0.2s;
+  }
+  .chip:hover { border-color: var(--gold); color: var(--gold); }
+  .contact-strip {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .contact-strip a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: var(--dark4);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 8px;
+    padding: 12px 16px;
+    font-size: 0.88rem;
+    font-weight: 500;
+    transition: border-color 0.2s, color 0.2s;
+  }
+  .contact-strip a:hover { border-color: var(--border); color: var(--gold); }
+  .contact-strip .c-icon { font-size: 1.1rem; color: var(--gold); width: 20px; }
+
+  /* ===== TRUST BAR ===== */
+  .trust-bar {
+    background: var(--dark2);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    padding: 20px 24px;
+  }
+  .trust-inner {
+    max-width: 1160px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+    flex-wrap: wrap;
+  }
+  .trust-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.82rem;
+    font-weight: 500;
+    color: var(--text-muted);
+  }
+  .trust-item .ti-icon { font-size: 1.2rem; color: var(--gold); }
+
+  /* ===== ABOUT ===== */
+  #about {
+    padding: 100px 0;
+    background: var(--dark2);
+  }
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+  }
+  .about-visual {
+    position: relative;
+  }
+  .about-img-wrap {
+    background: var(--dark3);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 40px;
+    aspect-ratio: 4/3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .about-img-wrap::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse 60% 60% at 50% 50%, rgba(0,200,224,0.05), transparent);
+  }
+  .key-icon-large {
+    font-size: 8rem;
+    color: var(--gold);
+    opacity: 0.15;
+    position: absolute;
+    right: -20px;
+    bottom: -20px;
+    transform: rotate(-30deg);
+  }
+  .about-feature-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-top: 0;
+  }
+  .about-feat {
+    background: var(--dark4);
+    border: 1px solid rgba(255,255,255,0.05);
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+  }
+  .about-feat .af-icon { font-size: 2rem; margin-bottom: 8px; }
+  .about-feat .af-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--gold);
+    line-height: 1;
+  }
+  .about-feat .af-lbl { font-size: 0.75rem; color: var(--text-muted); margin-top: 4px; text-transform: uppercase; letter-spacing: 0.08em; }
+  .about-text .section-sub { margin-bottom: 24px; }
+  .about-list { display: flex; flex-direction: column; gap: 12px; margin-top: 24px; }
+  .about-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+  }
+  .about-item .ai-check {
+    width: 22px; height: 22px;
+    min-width: 22px;
+    background: var(--gold-dim);
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    color: var(--gold);
+    margin-top: 1px;
+  }
+
+  /* ===== SERVICES ===== */
+  #services {
+    padding: 100px 0;
+    background: var(--dark);
+  }
+  .services-header { text-align: center; margin-bottom: 64px; }
+  .services-header .section-sub { margin: 0 auto; }
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  .service-card {
+    background: var(--dark3);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 10px;
+    padding: 28px;
+    position: relative;
+    overflow: hidden;
+    transition: border-color 0.25s, transform 0.25s;
+    cursor: default;
+  }
+  .service-card:hover {
+    border-color: var(--border);
+    transform: translateY(-4px);
+  }
+  .service-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    transform: scaleX(0);
+    transition: transform 0.3s;
+  }
+  .service-card:hover::before { transform: scaleX(1); }
+  .sc-icon {
+    font-size: 2.2rem;
+    margin-bottom: 16px;
+    display: block;
+  }
+  .sc-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--text);
+  }
+  .sc-desc { font-size: 0.84rem; color: var(--text-muted); line-height: 1.65; margin-bottom: 16px; }
+  .sc-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+  .sc-tag {
+    font-size: 0.7rem;
+    padding: 3px 10px;
+    background: var(--gold-dim);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    color: var(--gold);
+    font-weight: 500;
+  }
+
+  /* Vehicle Brands */
+  .brands-section {
+    padding: 80px 0;
+    background: var(--dark2);
+    overflow: hidden;
+  }
+  .brands-header { text-align: center; margin-bottom: 48px; }
+  .brands-scroll-wrap { overflow: hidden; }
+  .brands-track {
+    display: flex;
+    gap: 12px;
+    animation: scroll 25s linear infinite;
+    width: max-content;
+  }
+  .brands-track:hover { animation-play-state: paused; }
+  .brand-pill {
+    background: var(--dark3);
+    border: 1px solid rgba(255,255,255,0.07);
+    border-radius: 6px;
+    padding: 12px 24px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    white-space: nowrap;
+    transition: border-color 0.2s, color 0.2s;
+  }
+  .brand-pill:hover { border-color: var(--border); color: var(--gold); }
+
+  /* Key Types */
+  #key-types {
+    padding: 100px 0;
+    background: var(--dark);
+  }
+  .key-types-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-top: 48px;
+  }
+  .key-type-card {
+    background: var(--dark3);
+    border: 1px solid rgba(255,255,255,0.05);
+    border-radius: 10px;
+    padding: 28px 20px;
+    text-align: center;
+    transition: border-color 0.25s, transform 0.25s;
+  }
+  .key-type-card:hover { border-color: var(--border); transform: translateY(-3px); }
+  .ktc-icon { font-size: 2.4rem; margin-bottom: 12px; }
+  .ktc-title { font-family: 'Playfair Display', serif; font-size: 0.95rem; font-weight: 700; margin-bottom: 8px; }
+  .ktc-desc { font-size: 0.78rem; color: var(--text-muted); line-height: 1.55; }
+
+  /* Process */
+  #process {
+    padding: 100px 0;
+    background: var(--dark2);
+  }
+  .process-header { text-align: center; margin-bottom: 64px; }
+  .process-steps {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    position: relative;
+  }
+  .process-steps::before {
+    content: '';
+    position: absolute;
+    top: 36px; left: 12%;
+    width: 76%;
+    height: 2px;
+    background: linear-gradient(90deg, var(--border), var(--gold), var(--border));
+    z-index: 0;
+  }
+  .process-step {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+  }
+  .ps-num {
+    width: 72px; height: 72px;
+    background: var(--dark);
+    border: 2px solid var(--gold);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--gold);
+    position: relative;
+  }
+  .ps-title { font-weight: 700; font-size: 0.95rem; margin-bottom: 8px; }
+  .ps-desc { font-size: 0.8rem; color: var(--text-muted); line-height: 1.55; }
+
+  /* Common Problems */
+  #problems {
+    padding: 100px 0;
+    background: var(--dark);
+  }
+  .problems-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+    margin-top: 48px;
+  }
+  .problems-list { display: flex; flex-direction: column; gap: 12px; }
+  .problem-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background: var(--dark3);
+    border: 1px solid rgba(255,255,255,0.05);
+    border-radius: 8px;
+    padding: 16px 20px;
+    font-size: 0.88rem;
+    font-weight: 500;
+    transition: border-color 0.2s;
+  }
+  .problem-item:hover { border-color: var(--border); }
+  .problem-item .pi-dot {
+    width: 8px; height: 8px; min-width: 8px;
+    background: var(--gold);
+    border-radius: 50%;
+  }
+  .problems-info { display: flex; flex-direction: column; gap: 20px; }
+  .info-box {
+    background: var(--dark3);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 28px;
+  }
+  .info-box-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 14px;
+    color: var(--gold);
+  }
+  .info-steps { display: flex; flex-direction: column; gap: 10px; }
+  .info-step {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+  }
+  .info-step .is-n {
+    min-width: 24px; height: 24px;
+    background: var(--gold-dim);
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: var(--gold);
+  }
+
+  /* FAQ */
+  #faq {
+    padding: 100px 0;
+    background: var(--dark2);
+  }
+  .faq-header { text-align: center; margin-bottom: 60px; }
+  .faq-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+  .faq-item {
+    background: var(--dark3);
+    border: 1px solid rgba(255,255,255,0.05);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .faq-q {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 20px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    cursor: pointer;
+    text-align: left;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.92rem;
+    font-weight: 600;
+    color: var(--text);
+    transition: color 0.2s;
+  }
+  .faq-q:hover { color: var(--gold); }
+  .faq-q svg { min-width: 18px; color: var(--gold); transition: transform 0.3s; }
+  .faq-q.open svg { transform: rotate(45deg); }
+  .faq-a {
+    padding: 0 24px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease, padding 0.25s;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    line-height: 1.7;
+  }
+  .faq-a.open { max-height: 300px; padding: 0 24px 20px; }
+
+  /* Service Area */
+  #service-area {
+    padding: 100px 0;
+    background: var(--dark);
+  }
+  .area-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    margin-top: 0;
+  }
+  .area-text .section-sub { margin-bottom: 32px; }
+  .area-cities {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .area-city {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--dark3);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 6px;
+    padding: 8px 16px;
+    font-size: 0.82rem;
+    font-weight: 500;
+    color: var(--text-muted);
+    transition: border-color 0.2s, color 0.2s;
+  }
+  .area-city:hover { border-color: var(--border); color: var(--gold); }
+  .area-city .ac-dot { width: 6px; height: 6px; background: var(--gold); border-radius: 50%; min-width: 6px; }
+  .area-map {
+    background: var(--dark3);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    min-height: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+  }
+  .area-map::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse 60% 60% at 50% 50%, rgba(0,200,224,0.05), transparent);
+  }
+  .map-icon { font-size: 5rem; color: var(--gold); opacity: 0.4; }
+  .map-radius {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--gold);
+  }
+  .map-label { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.15em; color: var(--text-muted); }
+
+  /* Contact */
+  #contact {
+    padding: 100px 0;
+    background: var(--dark2);
+  }
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+  }
+  .contact-info .section-sub { margin-bottom: 36px; }
+  .contact-details { display: flex; flex-direction: column; gap: 16px; }
+  .cd-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    background: var(--dark3);
+    border: 1px solid rgba(255,255,255,0.05);
+    border-radius: 8px;
+    padding: 20px;
+    transition: border-color 0.2s;
+  }
+  .cd-item:hover { border-color: var(--border); }
+  .cd-icon {
+    width: 44px; height: 44px; min-width: 44px;
+    background: var(--gold-dim);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    color: var(--gold);
+  }
+  .cd-content .cd-label { font-size: 0.7rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 4px; }
+  .cd-content .cd-val { font-size: 0.95rem; font-weight: 500; }
+  .cd-content a { color: var(--text); transition: color 0.2s; }
+  .cd-content a:hover { color: var(--gold); }
+  .contact-form-wrap {
+    background: var(--dark3);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 36px;
+    position: relative;
+    overflow: hidden;
+  }
+  .contact-form-wrap::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  }
+  .form-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+  .form-sub { font-size: 0.82rem; color: var(--text-muted); margin-bottom: 24px; }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .form-group { display: flex; flex-direction: column; gap: 6px; margin-bottom: 14px; }
+  .form-group label { font-size: 0.78rem; font-weight: 600; letter-spacing: 0.06em; color: var(--text-muted); text-transform: uppercase; }
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    background: var(--dark4);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 6px;
+    padding: 12px 14px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.88rem;
+    color: var(--text);
+    outline: none;
+    transition: border-color 0.2s;
+    width: 100%;
+  }
+  .form-group input:focus,
+  .form-group select:focus,
+  .form-group textarea:focus { border-color: var(--gold); }
+  .form-group select option { background: var(--dark3); }
+  .form-group textarea { resize: vertical; min-height: 100px; }
+  .form-submit { width: 100%; }
+
+  /* Footer */
+  footer {
+    background: #030a14;
+    border-top: 1px solid var(--border);
+    padding: 60px 0 30px;
+  }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 48px;
+    margin-bottom: 48px;
+  }
+  .footer-brand .fb-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--gold);
+    margin-bottom: 12px;
+  }
+  .footer-brand p { font-size: 0.82rem; color: var(--text-muted); line-height: 1.7; margin-bottom: 20px; max-width: 280px; }
+  .footer-col h4 { font-size: 0.75rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: var(--text); margin-bottom: 16px; }
+  .footer-col ul { display: flex; flex-direction: column; gap: 8px; }
+  .footer-col ul li a { font-size: 0.82rem; color: var(--text-muted); transition: color 0.2s; }
+  .footer-col ul li a:hover { color: var(--gold); }
+  .footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.05);
+    padding-top: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .footer-bottom p { font-size: 0.78rem; color: var(--text-muted); }
+  .footer-bottom a { color: var(--gold); }
+  .footer-phone {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--gold-dim);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 8px 16px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--gold);
+    transition: background 0.2s;
+  }
+  .footer-phone:hover { background: rgba(200,168,75,0.25); }
+
+  /* ===== ANIMATIONS ===== */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.5; transform: scale(0.85); }
+  }
+  @keyframes scroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+  .reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
+
+  /* ===== MOBILE RESPONSIVE ===== */
+  @media (max-width: 1024px) {
+    .services-grid { grid-template-columns: repeat(2, 1fr); }
+    .key-types-grid { grid-template-columns: repeat(2, 1fr); }
+    .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+  }
+  @media (max-width: 768px) {
+    .nav-links { display: none; }
+    .nav-hamburger { display: flex; }
+    .hero-content { grid-template-columns: 1fr; gap: 40px; }
+    .hero-right { display: none; }
+    .hero-stats { gap: 20px; }
+    .about-grid { grid-template-columns: 1fr; gap: 40px; }
+    .about-visual { display: none; }
+    .services-grid { grid-template-columns: 1fr; }
+    .key-types-grid { grid-template-columns: repeat(2, 1fr); }
+    .process-steps { grid-template-columns: 1fr 1fr; gap: 24px; }
+    .process-steps::before { display: none; }
+    .problems-grid { grid-template-columns: 1fr; }
+    .faq-grid { grid-template-columns: 1fr; }
+    .area-grid { grid-template-columns: 1fr; }
+    .area-map { display: none; }
+    .contact-grid { grid-template-columns: 1fr; }
+    .footer-grid { grid-template-columns: 1fr 1fr; }
+    .form-row { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 480px) {
+    .key-types-grid { grid-template-columns: 1fr 1fr; }
+    .process-steps { grid-template-columns: 1fr; }
+    .footer-grid { grid-template-columns: 1fr; }
+    .hero-title { font-size: 2.2rem; }
+    .hero-actions { flex-direction: column; }
+    .hero-actions .btn-gold,
+    .hero-actions .btn-outline { width: 100%; justify-content: center; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#home" class="nav-logo">
+      <span class="logo-top">Car Key Replacement</span>
+      <span class="logo-bot">Ponte Vedra Beach, FL</span>
+    </a>
+    <div class="nav-links-wrap">
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li class="nav-dropdown">
+          <a href="#services">
+            Services
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="#services"><span class="d-icon">🔑</span> Lost Car Key Replacement</a>
+            <a href="#services"><span class="d-icon">📡</span> Key Fob &amp; Remote Programming</a>
+            <a href="#services"><span class="d-icon">✨</span> Smart Key &amp; Push-to-Start</a>
+            <a href="#services"><span class="d-icon">🔧</span> Ignition Repair &amp; Replacement</a>
+            <a href="#services"><span class="d-icon">🚗</span> Spare Car Key Service</a>
+            <a href="#services"><span class="d-icon">📱</span> Mobile On-Site Service</a>
+            <a href="#services"><span class="d-icon">🔐</span> Transponder Key Programming</a>
+            <a href="#services"><span class="d-icon">⚡</span> Emergency Key Service</a>
+          </div>
+        </li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </div>
+    <div class="nav-right-slot">
+      <a href="#contact" class="nav-cta" style="font-size:0.88rem;font-weight:600;color:#060d18;background:var(--gold);padding:9px 22px;border-radius:4px;text-decoration:none;display:inline-block;">Contact Us</a>
+      <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#home" onclick="closeMenu()">Home</a>
+  <a href="#services" onclick="closeMenu()">Services</a>
+  <a href="#services" onclick="closeMenu()" class="mobile-sub-link">🔑 Lost Car Key Replacement</a>
+  <a href="#services" onclick="closeMenu()" class="mobile-sub-link">📡 Key Fob &amp; Remote Programming</a>
+  <a href="#services" onclick="closeMenu()" class="mobile-sub-link">✨ Smart Key &amp; Push-to-Start</a>
+  <a href="#services" onclick="closeMenu()" class="mobile-sub-link">🔧 Ignition Repair &amp; Replacement</a>
+  <a href="#services" onclick="closeMenu()" class="mobile-sub-link">🚗 Spare Car Key Service</a>
+  <a href="#services" onclick="closeMenu()" class="mobile-sub-link">📱 Mobile On-Site Service</a>
+  <a href="#services" onclick="closeMenu()" class="mobile-sub-link">🔐 Transponder Key Programming</a>
+  <a href="#services" onclick="closeMenu()" class="mobile-sub-link">⚡ Emergency Key Service</a>
+  <a href="#about" onclick="closeMenu()">About</a>
+  <div class="mobile-cta-row">
+    <a href="tel:9049908577" class="btn-gold">📞 Call Now</a>
+  </div>
+</div>
+
+<!-- HERO -->
+<section id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    <div class="hero-left">
+      <div class="hero-badge">
+        <span class="pulse"></span>
+        Mobile Service Available Now
+      </div>
+      <h1 class="hero-title">
+        Car Key Replacement
+        <em>Ponte Vedra</em>
+      </h1>
+      <p class="hero-desc">Fast, reliable mobile automotive key replacement and programming. We come to you — no towing required. Serving Ponte Vedra Beach and within a 60-mile radius.</p>
+      <div class="hero-actions">
+        <a href="tel:9049908577" class="btn-gold">
+          📞 Call 904-990-8577
+        </a>
+        <a href="#services" class="btn-outline">
+          View Services
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat"><div class="num">60mi</div><div class="lbl">Service Radius</div></div>
+        <div class="hero-stat"><div class="num">30–60</div><div class="lbl">Min. Service Time</div></div>
+        <div class="hero-stat"><div class="num">18+</div><div class="lbl">Vehicle Brands</div></div>
+        <div class="hero-stat"><div class="num">100%</div><div class="lbl">Mobile On-Site</div></div>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="hero-card">
+        <div class="hero-card-title">What We Replace &amp; Program</div>
+        <div class="hero-card-sub">All modern key types, all major brands</div>
+        <div class="service-chips">
+          <span class="chip">Transponder Keys</span>
+          <span class="chip">Smart Keys</span>
+          <span class="chip">Push-to-Start</span>
+          <span class="chip">Laser Cut Keys</span>
+          <span class="chip">Key Fobs</span>
+          <span class="chip">Remote Programming</span>
+          <span class="chip">Proximity Keys</span>
+          <span class="chip">Ignition Repair</span>
+          <span class="chip">High-Security Keys</span>
+        </div>
+        <div class="contact-strip">
+          <a href="tel:9049908577">
+            <span class="c-icon">📞</span>
+            904-990-8577
+          </a>
+          <a href="https://carkeyreplacmentpontavedra.com" target="_blank" rel="noopener">
+            <span class="c-icon">🌐</span>
+            carkeyreplacmentpontavedra.com
+          </a>
+          <a href="#service-area">
+            <span class="c-icon">📍</span>
+            215 Tourside Dr, Ponte Vedra Beach, FL 32082
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="trust-inner">
+    <div class="trust-item"><span class="ti-icon">🚗</span> No Towing Required</div>
+    <div class="trust-item"><span class="ti-icon">⚡</span> Fast 30–60 Min Service</div>
+    <div class="trust-item"><span class="ti-icon">🔐</span> Advanced Programming Equipment</div>
+    <div class="trust-item"><span class="ti-icon">📍</span> We Come to You</div>
+    <div class="trust-item"><span class="ti-icon">🛡️</span> Maintains Vehicle Security</div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-visual reveal">
+        <div class="about-img-wrap">
+          <div class="about-feature-grid">
+            <div class="about-feat">
+              <div class="af-icon">🔑</div>
+              <div class="af-num">18+</div>
+              <div class="af-lbl">Brands Served</div>
+            </div>
+            <div class="about-feat">
+              <div class="af-icon">📍</div>
+              <div class="af-num">60mi</div>
+              <div class="af-lbl">Service Radius</div>
+            </div>
+            <div class="about-feat">
+              <div class="af-icon">⚡</div>
+              <div class="af-num">~45</div>
+              <div class="af-lbl">Min Avg Time</div>
+            </div>
+            <div class="about-feat">
+              <div class="af-icon">🛡️</div>
+              <div class="af-num">100%</div>
+              <div class="af-lbl">Mobile Service</div>
+            </div>
+          </div>
+          <div class="key-icon-large">🔑</div>
+        </div>
+      </div>
+      <div class="about-text reveal">
+        <span class="section-tag">About Us</span>
+        <h2 class="section-title">Professional Automotive Key Specialists</h2>
+        <div class="divider"></div>
+        <p class="section-sub">Car Key Replacement Ponte Vedra provides professional automotive key services designed to help drivers quickly regain access to their vehicles. Our technicians arrive with advanced key-cutting and programming equipment to create and program new keys directly at your location.</p>
+        <p class="section-sub" style="margin-top:14px;">Modern vehicles use complex security systems that require both precision cutting and electronic programming. We complete this process efficiently so you can get back on the road as quickly as possible.</p>
+        <div class="about-list">
+          <div class="about-item"><div class="ai-check">✓</div><span>Specialized automotive key service with advanced programming equipment</span></div>
+          <div class="about-item"><div class="ai-check">✓</div><span>Mobile service — we travel directly to your vehicle location</span></div>
+          <div class="about-item"><div class="ai-check">✓</div><span>Experience with modern transponder, smart key &amp; push-to-start systems</span></div>
+          <div class="about-item"><div class="ai-check">✓</div><span>Fast response for urgent situations — emergency service available</span></div>
+          <div class="about-item"><div class="ai-check">✓</div><span>Professional key cutting and programming for 18+ vehicle brands</span></div>
+          <div class="about-item"><div class="ai-check">✓</div><span>No towing required — complete service at your home, office or roadside</span></div>
+        </div>
+        <div style="margin-top:32px; display:flex; gap:14px; flex-wrap:wrap;">
+          <a href="tel:9049908577" class="btn-gold">📞 Call Now</a>
+          <a href="#contact" class="btn-outline">Get a Quote</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="container">
+    <div class="services-header reveal">
+      <span class="section-tag">Our Services</span>
+      <h2 class="section-title">Complete Automotive Key Solutions</h2>
+      <p class="section-sub">From lost keys to smart key programming, we handle all modern vehicle key systems with professional-grade equipment.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card reveal">
+        <span class="sc-icon">🔑</span>
+        <div class="sc-title">Lost Car Key Replacement</div>
+        <p class="sc-desc">Losing your car key can create an immediate problem, especially if it was your only key. We create and program a new key directly at your location — no towing necessary. We can generate a new key without the original, program the vehicle, and remove lost keys from vehicle memory.</p>
+        <div class="sc-tags">
+          <span class="sc-tag">No Original Needed</span>
+          <span class="sc-tag">On-Site</span>
+          <span class="sc-tag">Key Memory Deletion</span>
+        </div>
+      </div>
+      <div class="service-card reveal">
+        <span class="sc-icon">📡</span>
+        <div class="sc-title">Key Fob &amp; Remote Programming</div>
+        <p class="sc-desc">When a remote stops working or becomes damaged, it may prevent you from accessing or starting the vehicle. We provide key fob replacement and remote programming for modern automotive systems including signal troubleshooting and remote synchronization.</p>
+        <div class="sc-tags">
+          <span class="sc-tag">Fob Replacement</span>
+          <span class="sc-tag">Remote Sync</span>
+          <span class="sc-tag">Battery Replacement</span>
+        </div>
+      </div>
+      <div class="service-card reveal">
+        <span class="sc-icon">✨</span>
+        <div class="sc-title">Smart Keys &amp; Push-to-Start</div>
+        <p class="sc-desc">Push-to-start vehicles use smart keys that communicate wirelessly with the vehicle. These keys contain electronic chips that must be programmed precisely to start the engine. We handle smart key replacement, proximity key setup, and push-to-start programming.</p>
+        <div class="sc-tags">
+          <span class="sc-tag">Proximity Keys</span>
+          <span class="sc-tag">Wireless Programming</span>
+          <span class="sc-tag">Smart Key Setup</span>
+        </div>
+      </div>
+      <div class="service-card reveal">
+        <span class="sc-icon">🔐</span>
+        <div class="sc-title">Transponder Key Programming</div>
+        <p class="sc-desc">Most vehicles manufactured in the last 20 years use transponder keys with a small electronic chip that communicates with the vehicle's immobilizer. If not programmed correctly, the vehicle won't start even if the key fits. We handle all transponder chip programming and immobilizer resets.</p>
+        <div class="sc-tags">
+          <span class="sc-tag">Chip Programming</span>
+          <span class="sc-tag">Immobilizer Reset</span>
+          <span class="sc-tag">Spare Keys</span>
+        </div>
+      </div>
+      <div class="service-card reveal">
+        <span class="sc-icon">🔧</span>
+        <div class="sc-title">Ignition Repair &amp; Replacement</div>
+        <p class="sc-desc">Sometimes the problem is not the key itself but the ignition cylinder. If the key won't turn, becomes stuck, or breaks inside the ignition, we diagnose and repair or replace the ignition system. Early repair prevents further damage to the vehicle's starting system.</p>
+        <div class="sc-tags">
+          <span class="sc-tag">Stuck Key</span>
+          <span class="sc-tag">Ignition Cylinder</span>
+          <span class="sc-tag">Broken Key Extraction</span>
+        </div>
+      </div>
+      <div class="service-card reveal">
+        <span class="sc-icon">🚗</span>
+        <div class="sc-title">Spare Car Key Service</div>
+        <p class="sc-desc">Creating a spare key before an emergency happens can save significant time and money. Having a spare key prevents emergency lockouts, reduces replacement costs, and provides backup access for multiple drivers. Most spare keys can be cut and programmed during the same visit.</p>
+        <div class="sc-tags">
+          <span class="sc-tag">Same-Visit</span>
+          <span class="sc-tag">Prevent Lockouts</span>
+          <span class="sc-tag">Multiple Keys</span>
+        </div>
+      </div>
+      <div class="service-card reveal">
+        <span class="sc-icon">✂️</span>
+        <div class="sc-title">Laser Cut &amp; High-Security Keys</div>
+        <p class="sc-desc">Some vehicles use laser cut (sidewinder) keys with grooves cut along the center of the blade. These require specialized machines to cut accurately and offer improved security. We have professional equipment to cut high-security keys for many modern vehicles.</p>
+        <div class="sc-tags">
+          <span class="sc-tag">Sidewinder Keys</span>
+          <span class="sc-tag">High Security</span>
+          <span class="sc-tag">Precision Cut</span>
+        </div>
+      </div>
+      <div class="service-card reveal">
+        <span class="sc-icon">⚡</span>
+        <div class="sc-title">Emergency Car Key Service</div>
+        <p class="sc-desc">Car key problems rarely happen at convenient times. Our emergency service helps drivers quickly and safely regain access to their vehicles. We assist with keys locked in the car, lost vehicle keys, broken keys, remotes not working, and ignition problems.</p>
+        <div class="sc-tags">
+          <span class="sc-tag">Urgent Response</span>
+          <span class="sc-tag">Lockout Help</span>
+          <span class="sc-tag">Roadside</span>
+        </div>
+      </div>
+      <div class="service-card reveal">
+        <span class="sc-icon">📱</span>
+        <div class="sc-title">Mobile On-Site Service</div>
+        <p class="sc-desc">Our technicians travel directly to your vehicle — at your home, workplace, parking lot, shopping center, apartment complex, or roadside. We arrive equipped with all necessary tools and programming devices to complete most services in a single visit.</p>
+        <div class="sc-tags">
+          <span class="sc-tag">Come to You</span>
+          <span class="sc-tag">No Tow</span>
+          <span class="sc-tag">60-Mile Radius</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VEHICLE BRANDS -->
+<div class="brands-section reveal">
+  <div class="container">
+    <div class="brands-header">
+      <span class="section-tag">Vehicles We Service</span>
+      <h2 class="section-title">Keys for Many Makes &amp; Models</h2>
+      <p class="section-sub" style="margin:0 auto;">Our technicians can confirm compatibility before arriving to ensure the replacement goes smoothly.</p>
+    </div>
+  </div>
+  <div class="brands-scroll-wrap">
+    <div class="brands-track" id="brandsTrack">
+      <div class="brand-pill">Toyota</div>
+      <div class="brand-pill">Honda</div>
+      <div class="brand-pill">Nissan</div>
+      <div class="brand-pill">Ford</div>
+      <div class="brand-pill">Chevrolet</div>
+      <div class="brand-pill">Hyundai</div>
+      <div class="brand-pill">Kia</div>
+      <div class="brand-pill">Jeep</div>
+      <div class="brand-pill">Dodge</div>
+      <div class="brand-pill">Chrysler</div>
+      <div class="brand-pill">Subaru</div>
+      <div class="brand-pill">Volkswagen</div>
+      <div class="brand-pill">BMW</div>
+      <div class="brand-pill">Lexus</div>
+      <div class="brand-pill">Mazda</div>
+      <div class="brand-pill">GMC</div>
+      <div class="brand-pill">Acura</div>
+      <div class="brand-pill">Infiniti</div>
+      <!-- Duplicate for seamless loop -->
+      <div class="brand-pill">Toyota</div>
+      <div class="brand-pill">Honda</div>
+      <div class="brand-pill">Nissan</div>
+      <div class="brand-pill">Ford</div>
+      <div class="brand-pill">Chevrolet</div>
+      <div class="brand-pill">Hyundai</div>
+      <div class="brand-pill">Kia</div>
+      <div class="brand-pill">Jeep</div>
+      <div class="brand-pill">Dodge</div>
+      <div class="brand-pill">Chrysler</div>
+      <div class="brand-pill">Subaru</div>
+      <div class="brand-pill">Volkswagen</div>
+      <div class="brand-pill">BMW</div>
+      <div class="brand-pill">Lexus</div>
+      <div class="brand-pill">Mazda</div>
+      <div class="brand-pill">GMC</div>
+      <div class="brand-pill">Acura</div>
+      <div class="brand-pill">Infiniti</div>
+    </div>
+  </div>
+</div>
+
+<!-- PER-BRAND DESCRIPTIONS -->
+<section id="brands-detail" style="padding:100px 0;background:var(--dark);">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:56px;">
+      <span class="section-tag">By Vehicle Brand</span>
+      <h2 class="section-title">Car Key Replacement for Your Vehicle</h2>
+      <p class="section-sub" style="margin:0 auto;">Each manufacturer uses different key systems. Our technicians are equipped to handle all of them.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;" class="brand-detail-grid">
+
+      <div class="service-card reveal">
+        <span class="sc-icon">🚗</span>
+        <div class="sc-title">Toyota</div>
+        <p class="sc-desc">Toyota vehicles commonly use transponder keys, smart keys, and push-to-start systems. We provide Toyota key cutting and programming for many models. Whether you lost your key or need a spare, we can program Toyota keys safely and efficiently.</p>
+      </div>
+
+      <div class="service-card reveal">
+        <span class="sc-icon">🚗</span>
+        <div class="sc-title">Honda</div>
+        <p class="sc-desc">Honda vehicles often use transponder keys and modern key fob systems. Our technicians provide Honda car key replacement and programming for many models. If your Honda key is lost, broken, or not detected by the vehicle, we can create and program a replacement.</p>
+      </div>
+
+      <div class="service-card reveal">
+        <span class="sc-icon">🚗</span>
+        <div class="sc-title">Nissan</div>
+        <p class="sc-desc">Nissan cars frequently use smart keys and proximity key systems. We provide Nissan key replacement and programming services designed for modern vehicle security systems. If your Nissan key fob is lost or not working properly, we can help restore vehicle access quickly.</p>
+      </div>
+
+      <div class="service-card reveal">
+        <span class="sc-icon">🚗</span>
+        <div class="sc-title">Ford</div>
+        <p class="sc-desc">Ford vehicles use several types of keys including transponder keys, remote fobs, and push-to-start systems. Our technicians provide Ford key replacement and programming for many models. If your Ford key is lost or damaged, we can create a new working key.</p>
+      </div>
+
+      <div class="service-card reveal">
+        <span class="sc-icon">🚗</span>
+        <div class="sc-title">Chevrolet</div>
+        <p class="sc-desc">Chevrolet vehicles often use electronic key systems and remote fobs. Our service includes Chevrolet key replacement and programming for many models. Whether you lost your Chevy key or need an additional spare key, we can help restore access to your vehicle.</p>
+      </div>
+
+      <div class="service-card reveal">
+        <span class="sc-icon">🚗</span>
+        <div class="sc-title">Hyundai</div>
+        <p class="sc-desc">Hyundai vehicles commonly use transponder keys and keyless entry remotes. Car Key Replacement Ponte Vedra provides Hyundai key cutting and programming services. If your Hyundai key is lost, damaged, or not working correctly, we can program a replacement key.</p>
+      </div>
+
+      <div class="service-card reveal">
+        <span class="sc-icon">🚗</span>
+        <div class="sc-title">Kia</div>
+        <p class="sc-desc">Kia cars use a variety of modern key systems including remote keys and smart proximity keys. Our technicians can replace and program Kia keys for many models. If your Kia key fob stops working or is lost, we can create a new key.</p>
+      </div>
+
+      <div class="service-card reveal">
+        <span class="sc-icon">🚗</span>
+        <div class="sc-title">Jeep</div>
+        <p class="sc-desc">Jeep vehicles often use transponder keys and keyless entry systems. Our service includes Jeep key replacement and programming for many models. If your Jeep key is lost or your remote is not working, we can provide a replacement and program it.</p>
+      </div>
+
+      <div class="service-card reveal">
+        <span class="sc-icon">🚗</span>
+        <div class="sc-title">Dodge</div>
+        <p class="sc-desc">Dodge vehicles commonly use electronic key fobs and push-to-start smart keys. We provide Dodge key replacement and programming services designed for modern vehicle systems. If your Dodge key is lost or broken, we can create a new working key.</p>
+      </div>
+
+      <div class="service-card reveal">
+        <span class="sc-icon">🚗</span>
+        <div class="sc-title">Chrysler</div>
+        <p class="sc-desc">Chrysler vehicles often use advanced smart key systems and remote key fobs. Our technicians can replace and program Chrysler keys for many models. If your Chrysler key stops working or is lost, we can help restore access to the vehicle.</p>
+      </div>
+
+      <div class="service-card reveal">
+        <span class="sc-icon">🚗</span>
+        <div class="sc-title">Subaru</div>
+        <p class="sc-desc">Subaru vehicles use transponder keys and modern keyless entry remotes. Our service includes Subaru key replacement and programming for many models. If your Subaru key is lost or your remote stops working, we can create and program a replacement.</p>
+      </div>
+
+      <div class="service-card reveal">
+        <span class="sc-icon">🚗</span>
+        <div class="sc-title">Volkswagen</div>
+        <p class="sc-desc">Volkswagen vehicles often use high-security laser cut keys and electronic key fobs. Our technicians provide Volkswagen key replacement and programming services. If your VW key is lost or damaged, we can create a new key programmed to your vehicle.</p>
+      </div>
+
+      <div class="service-card reveal">
+        <span class="sc-icon">🚗</span>
+        <div class="sc-title">BMW</div>
+        <p class="sc-desc">BMW vehicles use advanced smart key systems and high-security laser cut keys. Car Key Replacement Ponte Vedra provides BMW key replacement and programming for many models. If your BMW key is lost, damaged, or not detected by the vehicle, we can program a new key.</p>
+      </div>
+
+      <div class="service-card reveal">
+        <span class="sc-icon">🚗</span>
+        <div class="sc-title">Lexus</div>
+        <p class="sc-desc">Lexus vehicles commonly use smart keys and push-to-start proximity systems. Our technicians provide Lexus key replacement and programming for many models. If your Lexus key fob is lost or not working correctly, we can create and program a replacement key.</p>
+      </div>
+
+      <div class="service-card reveal">
+        <span class="sc-icon">🚗</span>
+        <div class="sc-title">Mazda</div>
+        <p class="sc-desc">Mazda vehicles often use transponder keys and modern remote key fobs. Car Key Replacement Ponte Vedra provides Mazda key cutting and programming services for many models. If your Mazda key is lost, broken, or not working, we can create a new key.</p>
+      </div>
+
+      <div class="service-card reveal">
+        <span class="sc-icon">🚗</span>
+        <div class="sc-title">GMC</div>
+        <p class="sc-desc">GMC trucks and SUVs frequently use electronic key fobs and transponder key systems. Our technicians provide GMC key replacement and programming for many models. If your GMC key is lost, damaged, or locked inside the vehicle, we can help.</p>
+      </div>
+
+      <div class="service-card reveal">
+        <span class="sc-icon">🚗</span>
+        <div class="sc-title">Acura</div>
+        <p class="sc-desc">Acura vehicles use advanced transponder keys and smart key systems. Our service includes Acura key replacement and programming for many models. If your Acura key fob stops working or your key is lost, we can create a replacement key.</p>
+      </div>
+
+      <div class="service-card reveal">
+        <span class="sc-icon">🚗</span>
+        <div class="sc-title">Infiniti</div>
+        <p class="sc-desc">Infiniti vehicles commonly use smart keys and push-to-start proximity systems. Car Key Replacement Ponte Vedra provides Infiniti key replacement and programming services. If your Infiniti key is lost or not detected by the vehicle, we can program a new key.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+  @media (max-width: 1024px) { .brand-detail-grid { grid-template-columns: repeat(2,1fr) !important; } }
+  @media (max-width: 600px)  { .brand-detail-grid { grid-template-columns: 1fr !important; } }
+</style>
+
+<!-- KEY TYPES -->
+<section id="key-types">
+  <div class="container">
+    <span class="section-tag">Technology</span>
+    <h2 class="section-title">Types of Car Keys We Replace</h2>
+    <p class="section-sub">Vehicle key technology has evolved significantly. Each type requires different equipment and programming procedures.</p>
+    <div class="key-types-grid">
+      <div class="key-type-card reveal">
+        <div class="ktc-icon">🗝️</div>
+        <div class="ktc-title">Traditional Metal Keys</div>
+        <p class="ktc-desc">Classic cut keys for older vehicle models. Simple mechanical keys without electronic components.</p>
+      </div>
+      <div class="key-type-card reveal">
+        <div class="ktc-icon">🔐</div>
+        <div class="ktc-title">Transponder Chip Keys</div>
+        <p class="ktc-desc">Electronic chip inside the key head that communicates with the vehicle's immobilizer system. Required on most cars made in the last 20 years.</p>
+      </div>
+      <div class="key-type-card reveal">
+        <div class="ktc-icon">📡</div>
+        <div class="ktc-title">Remote Key Fobs</div>
+        <p class="ktc-desc">Wireless remotes for locking, unlocking, and remote start. Requires programming to communicate with your specific vehicle.</p>
+      </div>
+      <div class="key-type-card reveal">
+        <div class="ktc-icon">✨</div>
+        <div class="ktc-title">Smart Keys</div>
+        <p class="ktc-desc">Keyless proximity systems that communicate wirelessly. The vehicle detects the key nearby and allows engine start with a button.</p>
+      </div>
+      <div class="key-type-card reveal">
+        <div class="ktc-icon">🚀</div>
+        <div class="ktc-title">Push-to-Start Keys</div>
+        <p class="ktc-desc">Proximity keys for vehicles with push-button ignition. Must be precisely programmed to restore engine start functionality.</p>
+      </div>
+      <div class="key-type-card reveal">
+        <div class="ktc-icon">✂️</div>
+        <div class="ktc-title">Laser Cut Keys</div>
+        <p class="ktc-desc">Sidewinder keys with grooves cut along the center blade. Require specialized cutting machines and offer higher security.</p>
+      </div>
+      <div class="key-type-card reveal">
+        <div class="ktc-icon">🔒</div>
+        <div class="ktc-title">High-Security Keys</div>
+        <p class="ktc-desc">Advanced automotive keys with multiple security features designed to prevent duplication without professional equipment.</p>
+      </div>
+      <div class="key-type-card reveal">
+        <div class="ktc-icon">📲</div>
+        <div class="ktc-title">Proximity Keys</div>
+        <p class="ktc-desc">Advanced keyless entry systems that unlock the vehicle automatically when the key is nearby. Full programming support available.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process">
+  <div class="container">
+    <div class="process-header reveal">
+      <span class="section-tag">How It Works</span>
+      <h2 class="section-title">Simple 4-Step Process</h2>
+      <p class="section-sub" style="margin:0 auto;">From your call to a working key — we make the process as smooth as possible.</p>
+    </div>
+    <div class="process-steps">
+      <div class="process-step reveal">
+        <div class="ps-num">1</div>
+        <div class="ps-title">Call or Contact Us</div>
+        <p class="ps-desc">Reach out by phone or our contact form. Describe your vehicle and key situation so we can prepare the right equipment.</p>
+      </div>
+      <div class="process-step reveal">
+        <div class="ps-num">2</div>
+        <div class="ps-title">We Come to You</div>
+        <p class="ps-desc">Our mobile technician travels to your location — home, office, parking lot, or roadside. No towing required.</p>
+      </div>
+      <div class="process-step reveal">
+        <div class="ps-num">3</div>
+        <div class="ps-title">Cut &amp; Program</div>
+        <p class="ps-desc">We cut a new key and program it to communicate with your vehicle's immobilizer and security system using professional tools.</p>
+      </div>
+      <div class="process-step reveal">
+        <div class="ps-num">4</div>
+        <div class="ps-title">Test &amp; Go</div>
+        <p class="ps-desc">We test the new key to confirm full functionality before finishing. Old lost keys are removed from the vehicle memory if needed.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMMON PROBLEMS -->
+<section id="problems">
+  <div class="container">
+    <span class="section-tag">Common Issues</span>
+    <h2 class="section-title">Problems We Solve</h2>
+    <p class="section-sub">Identifying the exact problem helps determine whether the key needs replacement, programming, or repair.</p>
+    <div class="problems-grid">
+      <div class="problems-list reveal">
+        <div class="problem-item"><div class="pi-dot"></div> Lost or misplaced car keys</div>
+        <div class="problem-item"><div class="pi-dot"></div> Keys locked inside the vehicle</div>
+        <div class="problem-item"><div class="pi-dot"></div> Broken or snapped keys</div>
+        <div class="problem-item"><div class="pi-dot"></div> Remote key fob not working</div>
+        <div class="problem-item"><div class="pi-dot"></div> Push-to-start system not detecting key</div>
+        <div class="problem-item"><div class="pi-dot"></div> Ignition key not turning</div>
+        <div class="problem-item"><div class="pi-dot"></div> Key stuck in ignition</div>
+        <div class="problem-item"><div class="pi-dot"></div> Broken key inside ignition</div>
+        <div class="problem-item"><div class="pi-dot"></div> Worn or damaged keys</div>
+        <div class="problem-item"><div class="pi-dot"></div> Vehicle not recognizing key</div>
+        <div class="problem-item"><div class="pi-dot"></div> Ignition cylinder worn out</div>
+        <div class="problem-item"><div class="pi-dot"></div> Ignition switch not responding</div>
+      </div>
+      <div class="problems-info reveal">
+        <div class="info-box">
+          <div class="info-box-title">What to Do When You Lose Your Car Key</div>
+          <p style="font-size:0.84rem;color:var(--text-muted);margin-bottom:16px;line-height:1.65;">Losing your car key can be stressful, especially if it was your only key. Remain calm and follow these steps:</p>
+          <div class="info-steps">
+            <div class="info-step"><div class="is-n">1</div><span>Identify the vehicle make, model, and year for us</span></div>
+            <div class="info-step"><div class="is-n">2</div><span>We cut a new key blade if required for your vehicle</span></div>
+            <div class="info-step"><div class="is-n">3</div><span>The electronic chip is programmed to your vehicle's system</span></div>
+            <div class="info-step"><div class="is-n">4</div><span>New key is tested with the vehicle to confirm function</span></div>
+            <div class="info-step"><div class="is-n">5</div><span>Old lost keys are removed from system memory for security</span></div>
+          </div>
+        </div>
+        <div class="info-box">
+          <div class="info-box-title">Tips to Prevent Future Key Problems</div>
+          <div class="info-steps">
+            <div class="info-step"><div class="is-n">✓</div><span>Always keep a spare key stored safely</span></div>
+            <div class="info-step"><div class="is-n">✓</div><span>Replace worn or damaged keys early before they break</span></div>
+            <div class="info-step"><div class="is-n">✓</div><span>Avoid exposing remotes to moisture or extreme heat</span></div>
+            <div class="info-step"><div class="is-n">✓</div><span>Replace key fob batteries regularly (typically every 1–2 years)</span></div>
+            <div class="info-step"><div class="is-n">✓</div><span>Store spare keys in a secure, memorable location</span></div>
+          </div>
+        </div>
+        <div style="text-align:center;">
+          <a href="tel:9049908577" class="btn-gold" style="width:100%;justify-content:center;">📞 Call for Emergency Help</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="container">
+    <div class="faq-header reveal">
+      <span class="section-tag">FAQ</span>
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <p class="section-sub" style="margin:0 auto;">Common questions about our car key replacement and programming services.</p>
+    </div>
+    <div class="faq-grid">
+      <div class="faq-item reveal">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Can you replace a car key if I lost the original?
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 3v12M3 9h12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </button>
+        <div class="faq-a">Yes. In many cases we can create and program a new car key even if all keys are lost. The process usually includes cutting a new key and programming it to work with the vehicle's security system.</div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Do I need to tow my car to replace a key?
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 3v12M3 9h12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </button>
+        <div class="faq-a">Usually no. Our service is mobile, which means the key replacement and programming can often be completed at your location without towing the vehicle.</div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          How long does car key replacement take?
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 3v12M3 9h12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </button>
+        <div class="faq-a">Most car key replacement services take between 30 and 60 minutes, depending on the vehicle model and the type of key that needs to be programmed.</div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Can you program smart keys and push-to-start keys?
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 3v12M3 9h12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </button>
+        <div class="faq-a">Yes. We can program smart keys, proximity keys, push-to-start systems, and remote key fobs for many modern vehicles.</div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          What if my key fob stops working?
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 3v12M3 9h12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </button>
+        <div class="faq-a">If a key fob stops working, the issue may be a battery, programming problem, or damaged remote. In many cases we can replace or reprogram the key fob so it works correctly again.</div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Can you make a spare car key?
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 3v12M3 9h12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </button>
+        <div class="faq-a">Yes. Making a spare key is recommended because it helps prevent emergency lockouts and can save money compared to replacing a lost key later. Most spare keys can be created quickly when the original key is still available.</div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Why is my car not detecting the key?
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 3v12M3 9h12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </button>
+        <div class="faq-a">Modern vehicles use electronic systems that communicate with the key. If the key is not detected, it could be due to a weak battery, damaged chip, or programming issue.</div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Can you remove lost keys from the car system?
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 3v12M3 9h12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </button>
+        <div class="faq-a">Yes. For many vehicles it is possible to remove lost or stolen keys from the vehicle memory, which helps improve security after a key is lost.</div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Is car key replacement cheaper than the dealership?
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 3v12M3 9h12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </button>
+        <div class="faq-a">In many cases mobile key replacement can be more convenient and sometimes less expensive than dealership service, especially when towing costs are factored in.</div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          What should I do if my key is stuck in the ignition?
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 3v12M3 9h12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </button>
+        <div class="faq-a">Do not force the key. Forcing it may damage the ignition cylinder. It is best to have the ignition inspected and repaired by a professional as soon as possible.</div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Do newer vehicles require key programming?
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 3v12M3 9h12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </button>
+        <div class="faq-a">Yes. Most vehicles manufactured in the last 20 years use transponder chips or smart key systems that require electronic programming to work with the vehicle's immobilizer.</div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Can a broken car key be replaced?
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 3v12M3 9h12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </button>
+        <div class="faq-a">Yes. If a key is broken or damaged, we can usually create a replacement key and program it to the vehicle. If the key broke inside the ignition, we can also assist with extraction.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE AREA -->
+<section id="service-area">
+  <div class="container">
+    <div class="area-grid">
+      <div class="area-text reveal">
+        <span class="section-tag">Service Area</span>
+        <h2 class="section-title">We Serve a 60-Mile Radius</h2>
+        <div class="divider"></div>
+        <p class="section-sub">Based in Ponte Vedra Beach, FL, our mobile technicians travel to you anywhere within a 60-mile radius — covering Jacksonville and surrounding communities.</p>
+        <p class="section-sub" style="margin-top:14px;margin-bottom:28px;"><strong style="color:var(--text);">📍 215 Tourside Dr, Unit 1498C, Ponte Vedra Beach, FL 32082</strong></p>
+        <div class="area-cities">
+          <div class="area-city"><div class="ac-dot"></div> Ponte Vedra Beach</div>
+          <div class="area-city"><div class="ac-dot"></div> Jacksonville</div>
+          <div class="area-city"><div class="ac-dot"></div> Jacksonville Beach</div>
+          <div class="area-city"><div class="ac-dot"></div> Neptune Beach</div>
+          <div class="area-city"><div class="ac-dot"></div> Atlantic Beach</div>
+          <div class="area-city"><div class="ac-dot"></div> Orange Park</div>
+          <div class="area-city"><div class="ac-dot"></div> Fleming Island</div>
+          <div class="area-city"><div class="ac-dot"></div> Middleburg</div>
+          <div class="area-city"><div class="ac-dot"></div> Green Cove Springs</div>
+          <div class="area-city"><div class="ac-dot"></div> St. Augustine</div>
+          <div class="area-city"><div class="ac-dot"></div> St. Augustine Beach</div>
+          <div class="area-city"><div class="ac-dot"></div> Nocatee</div>
+          <div class="area-city"><div class="ac-dot"></div> Fernandina Beach</div>
+          <div class="area-city"><div class="ac-dot"></div> Yulee</div>
+          <div class="area-city"><div class="ac-dot"></div> Callahan</div>
+          <div class="area-city"><div class="ac-dot"></div> Baldwin</div>
+          <div class="area-city"><div class="ac-dot"></div> Macclenny</div>
+        </div>
+        <div style="margin-top:28px;">
+          <a href="tel:9049908577" class="btn-gold">📞 Check Your Area — Call Now</a>
+        </div>
+      </div>
+      <div class="area-map reveal">
+        <div class="map-icon">📍</div>
+        <div class="map-radius">60 mi</div>
+        <div class="map-label">Service Radius</div>
+        <p style="font-size:0.82rem;color:var(--text-muted);text-align:center;max-width:220px;line-height:1.6;">From Ponte Vedra Beach outward — covering Jacksonville metro and surrounding counties.</p>
+        <a href="tel:9049908577" class="btn-gold" style="margin-top:8px;">📞 904-990-8577</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <span class="section-tag">Contact Us</span>
+        <h2 class="section-title">Get in Touch</h2>
+        <div class="divider"></div>
+        <p class="section-sub">Ready to help you regain access to your vehicle quickly. Call us or send a message and we'll get back to you promptly.</p>
+        <div class="contact-details" style="margin-top:28px;">
+          <div class="cd-item">
+            <div class="cd-icon">📞</div>
+            <div class="cd-content">
+              <div class="cd-label">Phone</div>
+              <div class="cd-val"><a href="tel:9049908577">904-990-8577</a></div>
+            </div>
+          </div>
+          <div class="cd-item">
+            <div class="cd-icon">🌐</div>
+            <div class="cd-content">
+              <div class="cd-label">Website</div>
+              <div class="cd-val"><a href="https://carkeyreplacmentpontavedra.com" target="_blank" rel="noopener">carkeyreplacmentpontavedra.com</a></div>
+            </div>
+          </div>
+          <div class="cd-item">
+            <div class="cd-icon">📍</div>
+            <div class="cd-content">
+              <div class="cd-label">Address</div>
+              <div class="cd-val">215 Tourside Dr, Unit 1498C<br>Ponte Vedra Beach, FL 32082</div>
+            </div>
+          </div>
+          <div class="cd-item">
+            <div class="cd-icon">🚗</div>
+            <div class="cd-content">
+              <div class="cd-label">Service Type</div>
+              <div class="cd-val">Mobile — We Come to You<br><span style="color:var(--text-muted);font-size:0.82rem;">60-mile service radius</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form-wrap reveal">
+        <div class="form-title">Send Us a Message</div>
+        <div class="form-sub">Describe your situation and we'll respond quickly with next steps.</div>
+        <form onsubmit="handleForm(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" placeholder="John" required>
+            </div>
+            <div class="form-group">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" placeholder="Doe" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" placeholder="(904) 000-0000" required>
+          </div>
+          <div class="form-group">
+            <label for="vehicle">Vehicle (Year, Make, Model)</label>
+            <input type="text" id="vehicle" placeholder="e.g. 2021 Toyota Camry">
+          </div>
+          <div class="form-group">
+            <label for="service">Service Needed</label>
+            <select id="service">
+              <option value="">Select a service...</option>
+              <option>Lost Car Key Replacement</option>
+              <option>Spare Key Creation</option>
+              <option>Key Fob / Remote Programming</option>
+              <option>Smart Key / Push-to-Start</option>
+              <option>Transponder Key Programming</option>
+              <option>Ignition Repair / Replacement</option>
+              <option>Emergency Lockout</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message / Location Details</label>
+            <textarea id="message" placeholder="Describe your situation and your current location..."></textarea>
+          </div>
+          <button type="submit" class="btn-gold form-submit">Send Message →</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="fb-logo">Car Key Replacement Ponte Vedra</div>
+        <p>Professional mobile automotive key replacement and programming service. We come to your location within a 60-mile radius of Ponte Vedra Beach, FL. Fast, reliable, no towing required.</p>
+        <a href="tel:9049908577" class="footer-phone">📞 904-990-8577</a>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Lost Key Replacement</a></li>
+          <li><a href="#services">Key Fob Programming</a></li>
+          <li><a href="#services">Smart Key Service</a></li>
+          <li><a href="#services">Transponder Keys</a></li>
+          <li><a href="#services">Ignition Repair</a></li>
+          <li><a href="#services">Spare Key Creation</a></li>
+          <li><a href="#services">Emergency Service</a></li>
+          <li><a href="#services">Laser Cut Keys</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Vehicle Brands</h4>
+        <ul>
+          <li><a href="#key-types">Toyota</a></li>
+          <li><a href="#key-types">Honda</a></li>
+          <li><a href="#key-types">Ford</a></li>
+          <li><a href="#key-types">Chevrolet</a></li>
+          <li><a href="#key-types">BMW</a></li>
+          <li><a href="#key-types">Nissan</a></li>
+          <li><a href="#key-types">Hyundai / Kia</a></li>
+          <li><a href="#key-types">+ More Brands</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Service Areas</h4>
+        <ul>
+          <li><a href="#service-area">Ponte Vedra Beach</a></li>
+          <li><a href="#service-area">Jacksonville</a></li>
+          <li><a href="#service-area">Jacksonville Beach</a></li>
+          <li><a href="#service-area">St. Augustine</a></li>
+          <li><a href="#service-area">Orange Park</a></li>
+          <li><a href="#service-area">Neptune Beach</a></li>
+          <li><a href="#service-area">Fleming Island</a></li>
+          <li><a href="#service-area">+ More Areas</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Car Key Replacement Ponte Vedra. All rights reserved. | 215 Tourside Dr, Unit 1498C, Ponte Vedra Beach, FL 32082</p>
+      <p>📞 <a href="tel:9049908577">904-990-8577</a> | <a href="https://carkeyreplacmentpontavedra.com" target="_blank" rel="noopener">carkeyreplacmentpontavedra.com</a></p>
+    </div>
+  </div>
+</footer>
+
+<!-- FLOATING CALL BUTTON -->
+<a href="tel:9049908577" class="float-call" aria-label="Call Now">
+  <span class="float-call-icon">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8a19.79 19.79 0 01-3.07-8.68A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+  </span>
+  <span class="float-call-label">
+    <span class="float-call-text">Call Now</span>
+    <span class="float-call-num">904-990-8577</span>
+  </span>
+</a>
+
+<style>
+  .float-call {
+    position: fixed;
+    bottom: 28px;
+    right: 28px;
+    z-index: 9998;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: linear-gradient(135deg, #ff6b2b 0%, #e04000 100%);
+    color: #fff;
+    border-radius: 50px;
+    padding: 13px 22px 13px 14px;
+    box-shadow: 0 6px 32px rgba(255,100,43,0.55), 0 2px 10px rgba(0,0,0,0.5);
+    text-decoration: none;
+    font-family: 'DM Sans', sans-serif;
+    transition: transform 0.25s cubic-bezier(0.34,1.56,0.64,1), box-shadow 0.25s;
+    animation: floatPop 0.7s 1.2s cubic-bezier(0.34,1.56,0.64,1) both;
+  }
+  .float-call:hover {
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 14px 44px rgba(255,100,43,0.7), 0 4px 16px rgba(0,0,0,0.5);
+  }
+  .float-call:active { transform: scale(0.97); }
+  .float-call-icon {
+    width: 40px; height: 40px; min-width: 40px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: ringBell 3s 3.5s ease-in-out infinite;
+  }
+  .float-call-label { display: flex; flex-direction: column; gap: 2px; }
+  .float-call-text {
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    opacity: 0.85;
+    line-height: 1;
+  }
+  .float-call-num {
+    font-size: 0.98rem;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.02em;
+  }
+  @keyframes floatPop {
+    from { opacity: 0; transform: translateY(50px) scale(0.6); }
+    to   { opacity: 1; transform: translateY(0) scale(1); }
+  }
+  @keyframes ringBell {
+    0%, 100% { transform: rotate(0deg) scale(1); }
+    8%  { transform: rotate(-18deg) scale(1.1); }
+    16% { transform: rotate(18deg) scale(1.1); }
+    24% { transform: rotate(-12deg) scale(1.05); }
+    32% { transform: rotate(12deg) scale(1.05); }
+    40% { transform: rotate(0deg) scale(1); }
+  }
+  @media (max-width: 480px) {
+    .float-call { bottom: 18px; right: 14px; padding: 11px 18px 11px 12px; gap: 10px; }
+    .float-call-num { font-size: 0.88rem; }
+    .float-call-icon { width: 34px; height: 34px; min-width: 34px; }
+  }
+</style>
+
+<script>
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 20);
+  });
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('open');
+    mobileMenu.classList.toggle('open');
+  });
+  function closeMenu() {
+    hamburger.classList.remove('open');
+    mobileMenu.classList.remove('open');
+  }
+  document.addEventListener('click', (e) => {
+    if (!hamburger.contains(e.target) && !mobileMenu.contains(e.target)) closeMenu();
+  });
+  function toggleFaq(btn) {
+    const answer = btn.nextElementSibling;
+    const isOpen = btn.classList.contains('open');
+    document.querySelectorAll('.faq-q.open').forEach(b => {
+      b.classList.remove('open');
+      b.nextElementSibling.classList.remove('open');
+    });
+    if (!isOpen) { btn.classList.add('open'); answer.classList.add('open'); }
+  }
+  const revealEls = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); }
+    });
+  }, { threshold: 0.1 });
+  revealEls.forEach(el => observer.observe(el));
+  function handleForm(e) {
+    e.preventDefault();
+    const btn = e.target.querySelector('.form-submit');
+    btn.textContent = '✓ Message Sent!';
+    btn.style.background = '#4ade80';
+    btn.style.color = '#060d18';
+    setTimeout(() => {
+      btn.textContent = 'Send Message →';
+      btn.style.background = '';
+      btn.style.color = '';
+      e.target.reset();
+    }, 3000);
+  }
+</script>
+</body>
+</html>
