@@ -7,6 +7,8 @@
 <title>Car Key Replacement Ponte Vedra | Mobile Auto Key Service</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="icon" type="image/x-icon" href="assets/images/logo.ico">
+<link rel="shortcut icon" href="assets/images/logo.ico">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
   /* ===== RESET & BASE ===== */
@@ -892,16 +894,18 @@
     background: var(--dark3);
     border: 1px solid var(--border);
     border-radius: 12px;
-    padding: 40px;
-    text-align: center;
+    padding: 0;
     position: relative;
     overflow: hidden;
     min-height: 320px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 16px;
+  }
+  .area-map iframe {
+    width: 100%;
+    height: 320px;
+    border: none;
+    border-radius: 12px;
   }
   .area-map::before {
     content: '';
@@ -917,6 +921,68 @@
     color: var(--gold);
   }
   .map-label { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.15em; color: var(--text-muted); }
+
+  /* Reviews */
+  #reviews {
+    padding: 100px 0;
+    background: var(--dark);
+  }
+  .reviews-header { text-align: center; margin-bottom: 64px; }
+  .reviews-header .section-sub { margin: 0 auto; }
+  .reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 48px;
+  }
+  .review-card {
+    background: var(--dark3);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 12px;
+    padding: 28px;
+    position: relative;
+    transition: border-color 0.25s, transform 0.25s;
+  }
+  .review-card:hover {
+    border-color: var(--border);
+    transform: translateY(-2px);
+  }
+  .review-stars {
+    color: var(--gold);
+    font-size: 1.1rem;
+    margin-bottom: 16px;
+    letter-spacing: 2px;
+  }
+  .review-text {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    font-style: italic;
+  }
+  .review-author {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .review-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--gold-dim);
+    border: 2px solid var(--gold);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    color: var(--gold);
+    font-size: 1.1rem;
+  }
+  .review-name {
+    font-weight: 600;
+    color: var(--text);
+    font-size: 0.95rem;
+  }
 
   /* Contact */
   #contact {
@@ -1077,11 +1143,13 @@
   @media (max-width: 1024px) {
     .services-grid { grid-template-columns: repeat(2, 1fr); }
     .key-types-grid { grid-template-columns: repeat(2, 1fr); }
+    .reviews-grid { grid-template-columns: repeat(2, 1fr); }
     .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
   }
   @media (max-width: 768px) {
     .nav-links { display: none; }
     .nav-hamburger { display: flex; }
+    .desktop-only { display: none !important; }
     .hero-content { grid-template-columns: 1fr; gap: 40px; }
     .hero-right { display: none; }
     .hero-stats { gap: 20px; }
@@ -1094,7 +1162,7 @@
     .problems-grid { grid-template-columns: 1fr; }
     .faq-grid { grid-template-columns: 1fr; }
     .area-grid { grid-template-columns: 1fr; }
-    .area-map { display: none; }
+    .reviews-grid { grid-template-columns: 1fr; }
     .contact-grid { grid-template-columns: 1fr; }
     .footer-grid { grid-template-columns: 1fr 1fr; }
     .form-row { grid-template-columns: 1fr; }
@@ -1116,8 +1184,7 @@
 <nav id="navbar">
   <div class="nav-inner">
     <a href="#home" class="nav-logo">
-      <span class="logo-top">Car Key Replacement</span>
-      <span class="logo-bot">Ponte Vedra Beach, FL</span>
+      <img src="assets/images/logo.webp" alt="Car Key Replacement Ponte Vedra" style="height: 60px; width: 60px; object-fit: contain;">
     </a>
     <div class="nav-links-wrap">
       <ul class="nav-links">
@@ -1139,10 +1206,13 @@
           </div>
         </li>
         <li><a href="#about">About</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#faq">FAQ</a></li>
+
       </ul>
     </div>
     <div class="nav-right-slot">
-      <a href="#contact" class="nav-cta" style="font-size:0.88rem;font-weight:600;color:#060d18;background:var(--gold);padding:9px 22px;border-radius:4px;text-decoration:none;display:inline-block;">Contact Us</a>
+      <a href="#contact" class="nav-cta desktop-only" style="font-size:0.88rem;font-weight:600;color:#060d18;background:var(--gold);padding:9px 22px;border-radius:4px;text-decoration:none;display:inline-block;">Contact Us</a>
       <button class="nav-hamburger" id="hamburger" aria-label="Menu">
         <span></span><span></span><span></span>
       </button>
@@ -1163,6 +1233,8 @@
   <a href="#services" onclick="closeMenu()" class="mobile-sub-link">🔐 Transponder Key Programming</a>
   <a href="#services" onclick="closeMenu()" class="mobile-sub-link">⚡ Emergency Key Service</a>
   <a href="#about" onclick="closeMenu()">About</a>
+  <a href="#reviews" onclick="closeMenu()">Reviews</a>
+  <a href="#faq" onclick="closeMenu()">FAQ</a>
   <div class="mobile-cta-row">
     <a href="tel:9049908577" class="btn-gold">📞 Call Now</a>
   </div>
@@ -1242,60 +1314,6 @@
     <div class="trust-item"><span class="ti-icon">🛡️</span> Maintains Vehicle Security</div>
   </div>
 </div>
-
-<!-- ABOUT -->
-<section id="about">
-  <div class="container">
-    <div class="about-grid">
-      <div class="about-visual reveal">
-        <div class="about-img-wrap">
-          <div class="about-feature-grid">
-            <div class="about-feat">
-              <div class="af-icon">🔑</div>
-              <div class="af-num">18+</div>
-              <div class="af-lbl">Brands Served</div>
-            </div>
-            <div class="about-feat">
-              <div class="af-icon">📍</div>
-              <div class="af-num">60mi</div>
-              <div class="af-lbl">Service Radius</div>
-            </div>
-            <div class="about-feat">
-              <div class="af-icon">⚡</div>
-              <div class="af-num">~45</div>
-              <div class="af-lbl">Min Avg Time</div>
-            </div>
-            <div class="about-feat">
-              <div class="af-icon">🛡️</div>
-              <div class="af-num">100%</div>
-              <div class="af-lbl">Mobile Service</div>
-            </div>
-          </div>
-          <div class="key-icon-large">🔑</div>
-        </div>
-      </div>
-      <div class="about-text reveal">
-        <span class="section-tag">About Us</span>
-        <h2 class="section-title">Professional Automotive Key Specialists</h2>
-        <div class="divider"></div>
-        <p class="section-sub">Car Key Replacement Ponte Vedra provides professional automotive key services designed to help drivers quickly regain access to their vehicles. Our technicians arrive with advanced key-cutting and programming equipment to create and program new keys directly at your location.</p>
-        <p class="section-sub" style="margin-top:14px;">Modern vehicles use complex security systems that require both precision cutting and electronic programming. We complete this process efficiently so you can get back on the road as quickly as possible.</p>
-        <div class="about-list">
-          <div class="about-item"><div class="ai-check">✓</div><span>Specialized automotive key service with advanced programming equipment</span></div>
-          <div class="about-item"><div class="ai-check">✓</div><span>Mobile service — we travel directly to your vehicle location</span></div>
-          <div class="about-item"><div class="ai-check">✓</div><span>Experience with modern transponder, smart key &amp; push-to-start systems</span></div>
-          <div class="about-item"><div class="ai-check">✓</div><span>Fast response for urgent situations — emergency service available</span></div>
-          <div class="about-item"><div class="ai-check">✓</div><span>Professional key cutting and programming for 18+ vehicle brands</span></div>
-          <div class="about-item"><div class="ai-check">✓</div><span>No towing required — complete service at your home, office or roadside</span></div>
-        </div>
-        <div style="margin-top:32px; display:flex; gap:14px; flex-wrap:wrap;">
-          <a href="tel:9049908577" class="btn-gold">📞 Call Now</a>
-          <a href="#contact" class="btn-outline">Get a Quote</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
 <!-- SERVICES -->
 <section id="services">
@@ -1400,6 +1418,60 @@
   </div>
 </section>
 
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-visual reveal">
+        <div class="about-img-wrap">
+          <div class="about-feature-grid">
+            <div class="about-feat">
+              <div class="af-icon">🔑</div>
+              <div class="af-num">18+</div>
+              <div class="af-lbl">Brands Served</div>
+            </div>
+            <div class="about-feat">
+              <div class="af-icon">📍</div>
+              <div class="af-num">60mi</div>
+              <div class="af-lbl">Service Radius</div>
+            </div>
+            <div class="about-feat">
+              <div class="af-icon">⚡</div>
+              <div class="af-num">~45</div>
+              <div class="af-lbl">Min Avg Time</div>
+            </div>
+            <div class="about-feat">
+              <div class="af-icon">🛡️</div>
+              <div class="af-num">100%</div>
+              <div class="af-lbl">Mobile Service</div>
+            </div>
+          </div>
+          <div class="key-icon-large">🔑</div>
+        </div>
+      </div>
+      <div class="about-text reveal">
+        <span class="section-tag">About Us</span>
+        <h2 class="section-title">Professional Automotive Key Specialists</h2>
+        <div class="divider"></div>
+        <p class="section-sub">Car Key Replacement Ponte Vedra provides professional automotive key services designed to help drivers quickly regain access to their vehicles. Our technicians arrive with advanced key-cutting and programming equipment to create and program new keys directly at your location.</p>
+        <p class="section-sub" style="margin-top:14px;">Modern vehicles use complex security systems that require both precision cutting and electronic programming. We complete this process efficiently so you can get back on the road as quickly as possible.</p>
+        <div class="about-list">
+          <div class="about-item"><div class="ai-check">✓</div><span>Specialized automotive key service with advanced programming equipment</span></div>
+          <div class="about-item"><div class="ai-check">✓</div><span>Mobile service — we travel directly to your vehicle location</span></div>
+          <div class="about-item"><div class="ai-check">✓</div><span>Experience with modern transponder, smart key &amp; push-to-start systems</span></div>
+          <div class="about-item"><div class="ai-check">✓</div><span>Fast response for urgent situations — emergency service available</span></div>
+          <div class="about-item"><div class="ai-check">✓</div><span>Professional key cutting and programming for 18+ vehicle brands</span></div>
+          <div class="about-item"><div class="ai-check">✓</div><span>No towing required — complete service at your home, office or roadside</span></div>
+        </div>
+        <div style="margin-top:32px; display:flex; gap:14px; flex-wrap:wrap;">
+          <a href="tel:9049908577" class="btn-gold">📞 Call Now</a>
+          <a href="#contact" class="btn-outline">Get a Quote</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- VEHICLE BRANDS -->
 <div class="brands-section reveal">
   <div class="container">
@@ -1463,109 +1535,91 @@
     <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;" class="brand-detail-grid">
 
       <div class="service-card reveal">
-        <span class="sc-icon">🚗</span>
         <div class="sc-title">Toyota</div>
         <p class="sc-desc">Toyota vehicles commonly use transponder keys, smart keys, and push-to-start systems. We provide Toyota key cutting and programming for many models. Whether you lost your key or need a spare, we can program Toyota keys safely and efficiently.</p>
       </div>
 
       <div class="service-card reveal">
-        <span class="sc-icon">🚗</span>
         <div class="sc-title">Honda</div>
         <p class="sc-desc">Honda vehicles often use transponder keys and modern key fob systems. Our technicians provide Honda car key replacement and programming for many models. If your Honda key is lost, broken, or not detected by the vehicle, we can create and program a replacement.</p>
       </div>
 
       <div class="service-card reveal">
-        <span class="sc-icon">🚗</span>
         <div class="sc-title">Nissan</div>
         <p class="sc-desc">Nissan cars frequently use smart keys and proximity key systems. We provide Nissan key replacement and programming services designed for modern vehicle security systems. If your Nissan key fob is lost or not working properly, we can help restore vehicle access quickly.</p>
       </div>
 
       <div class="service-card reveal">
-        <span class="sc-icon">🚗</span>
         <div class="sc-title">Ford</div>
         <p class="sc-desc">Ford vehicles use several types of keys including transponder keys, remote fobs, and push-to-start systems. Our technicians provide Ford key replacement and programming for many models. If your Ford key is lost or damaged, we can create a new working key.</p>
       </div>
 
       <div class="service-card reveal">
-        <span class="sc-icon">🚗</span>
         <div class="sc-title">Chevrolet</div>
         <p class="sc-desc">Chevrolet vehicles often use electronic key systems and remote fobs. Our service includes Chevrolet key replacement and programming for many models. Whether you lost your Chevy key or need an additional spare key, we can help restore access to your vehicle.</p>
       </div>
 
       <div class="service-card reveal">
-        <span class="sc-icon">🚗</span>
         <div class="sc-title">Hyundai</div>
         <p class="sc-desc">Hyundai vehicles commonly use transponder keys and keyless entry remotes. Car Key Replacement Ponte Vedra provides Hyundai key cutting and programming services. If your Hyundai key is lost, damaged, or not working correctly, we can program a replacement key.</p>
       </div>
 
       <div class="service-card reveal">
-        <span class="sc-icon">🚗</span>
         <div class="sc-title">Kia</div>
         <p class="sc-desc">Kia cars use a variety of modern key systems including remote keys and smart proximity keys. Our technicians can replace and program Kia keys for many models. If your Kia key fob stops working or is lost, we can create a new key.</p>
       </div>
 
       <div class="service-card reveal">
-        <span class="sc-icon">🚗</span>
         <div class="sc-title">Jeep</div>
         <p class="sc-desc">Jeep vehicles often use transponder keys and keyless entry systems. Our service includes Jeep key replacement and programming for many models. If your Jeep key is lost or your remote is not working, we can provide a replacement and program it.</p>
       </div>
 
       <div class="service-card reveal">
-        <span class="sc-icon">🚗</span>
         <div class="sc-title">Dodge</div>
         <p class="sc-desc">Dodge vehicles commonly use electronic key fobs and push-to-start smart keys. We provide Dodge key replacement and programming services designed for modern vehicle systems. If your Dodge key is lost or broken, we can create a new working key.</p>
       </div>
 
       <div class="service-card reveal">
-        <span class="sc-icon">🚗</span>
         <div class="sc-title">Chrysler</div>
         <p class="sc-desc">Chrysler vehicles often use advanced smart key systems and remote key fobs. Our technicians can replace and program Chrysler keys for many models. If your Chrysler key stops working or is lost, we can help restore access to the vehicle.</p>
       </div>
 
       <div class="service-card reveal">
-        <span class="sc-icon">🚗</span>
         <div class="sc-title">Subaru</div>
         <p class="sc-desc">Subaru vehicles use transponder keys and modern keyless entry remotes. Our service includes Subaru key replacement and programming for many models. If your Subaru key is lost or your remote stops working, we can create and program a replacement.</p>
       </div>
 
       <div class="service-card reveal">
-        <span class="sc-icon">🚗</span>
         <div class="sc-title">Volkswagen</div>
         <p class="sc-desc">Volkswagen vehicles often use high-security laser cut keys and electronic key fobs. Our technicians provide Volkswagen key replacement and programming services. If your VW key is lost or damaged, we can create a new key programmed to your vehicle.</p>
       </div>
 
       <div class="service-card reveal">
-        <span class="sc-icon">🚗</span>
         <div class="sc-title">BMW</div>
         <p class="sc-desc">BMW vehicles use advanced smart key systems and high-security laser cut keys. Car Key Replacement Ponte Vedra provides BMW key replacement and programming for many models. If your BMW key is lost, damaged, or not detected by the vehicle, we can program a new key.</p>
       </div>
 
       <div class="service-card reveal">
-        <span class="sc-icon">🚗</span>
         <div class="sc-title">Lexus</div>
         <p class="sc-desc">Lexus vehicles commonly use smart keys and push-to-start proximity systems. Our technicians provide Lexus key replacement and programming for many models. If your Lexus key fob is lost or not working correctly, we can create and program a replacement key.</p>
       </div>
 
       <div class="service-card reveal">
-        <span class="sc-icon">🚗</span>
         <div class="sc-title">Mazda</div>
         <p class="sc-desc">Mazda vehicles often use transponder keys and modern remote key fobs. Car Key Replacement Ponte Vedra provides Mazda key cutting and programming services for many models. If your Mazda key is lost, broken, or not working, we can create a new key.</p>
       </div>
 
       <div class="service-card reveal">
-        <span class="sc-icon">🚗</span>
         <div class="sc-title">GMC</div>
         <p class="sc-desc">GMC trucks and SUVs frequently use electronic key fobs and transponder key systems. Our technicians provide GMC key replacement and programming for many models. If your GMC key is lost, damaged, or locked inside the vehicle, we can help.</p>
       </div>
 
       <div class="service-card reveal">
-        <span class="sc-icon">🚗</span>
         <div class="sc-title">Acura</div>
         <p class="sc-desc">Acura vehicles use advanced transponder keys and smart key systems. Our service includes Acura key replacement and programming for many models. If your Acura key fob stops working or your key is lost, we can create a replacement key.</p>
       </div>
 
       <div class="service-card reveal">
-        <span class="sc-icon">🚗</span>
         <div class="sc-title">Infiniti</div>
         <p class="sc-desc">Infiniti vehicles commonly use smart keys and push-to-start proximity systems. Car Key Replacement Ponte Vedra provides Infiniti key replacement and programming services. If your Infiniti key is lost or not detected by the vehicle, we can program a new key.</p>
       </div>
@@ -1811,6 +1865,68 @@
   </div>
 </section>
 
+<!-- REVIEWS -->
+<section id="reviews">
+  <div class="container">
+    <div class="reviews-header reveal">
+      <span class="section-tag">Customer Reviews</span>
+      <h2 class="section-title">What Our Customers Say</h2>
+      <div class="divider"></div>
+      <p class="section-sub">Real feedback from satisfied customers in Ponte Vedra Beach and surrounding areas.</p>
+    </div>
+    <div class="reviews-grid">
+      <div class="review-card reveal">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"I lost my only car key while I was at the beach in Ponte Vedra and thought I would need to tow my car to the dealership. The technician arrived quickly and made a new key right at my location. The process was fast and professional. Highly recommended."</p>
+        <div class="review-author">
+          <div class="review-avatar">MT</div>
+          <div class="review-name">Michael Tomaston</div>
+        </div>
+      </div>
+      <div class="review-card reveal">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"Excellent service. My key fob stopped working and I couldn't start my car. The technician explained everything clearly and programmed a new remote on-site. The price was fair and the service was very convenient."</p>
+        <div class="review-author">
+          <div class="review-avatar">SL</div>
+          <div class="review-name">Sarah Leron</div>
+        </div>
+      </div>
+      <div class="review-card reveal">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"Great experience. I locked my keys in the car and needed help quickly. The locksmith arrived faster than expected and unlocked the car without any damage. Very professional and friendly service."</p>
+        <div class="review-author">
+          <div class="review-avatar">DR</div>
+          <div class="review-name">Daniel Roger's</div>
+        </div>
+      </div>
+      <div class="review-card reveal">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"I needed a spare key for my Toyota and the process was very smooth. The technician cut and programmed the key in less than an hour. Much easier than going to the dealership."</p>
+        <div class="review-author">
+          <div class="review-avatar">AM</div>
+          <div class="review-name">Ashley McDonald</div>
+        </div>
+      </div>
+      <div class="review-card reveal">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"My ignition key would not turn and I thought it would be a major repair. The technician diagnosed the problem and fixed the ignition quickly. Honest and professional service."</p>
+        <div class="review-author">
+          <div class="review-avatar">KB</div>
+          <div class="review-name">Kevin Bonita</div>
+        </div>
+      </div>
+      <div class="review-card reveal">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"Very reliable car key service in Ponte Vedra. I lost my smart key and they were able to program a replacement the same day. The technician was knowledgeable and explained how everything works."</p>
+        <div class="review-author">
+          <div class="review-avatar">JC</div>
+          <div class="review-name">Jennifer Comaz</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- SERVICE AREA -->
 <section id="service-area">
   <div class="container">
@@ -1845,11 +1961,13 @@
         </div>
       </div>
       <div class="area-map reveal">
-        <div class="map-icon">📍</div>
-        <div class="map-radius">60 mi</div>
-        <div class="map-label">Service Radius</div>
-        <p style="font-size:0.82rem;color:var(--text-muted);text-align:center;max-width:220px;line-height:1.6;">From Ponte Vedra Beach outward — covering Jacksonville metro and surrounding counties.</p>
-        <a href="tel:9049908577" class="btn-gold" style="margin-top:8px;">📞 904-990-8577</a>
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14061.4856483826!2d-81.415032!3d30.077448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e5b7a3a4a4a4a4%3A0x1234567890abcdef!2sPonte%20Vedra%20Beach%2C%20FL!5e0!3m2!1sen!2sus!4v1234567890"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
       </div>
     </div>
   </div>
@@ -1947,7 +2065,7 @@
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <div class="fb-logo">Car Key Replacement Ponte Vedra</div>
+        <img src="assets/images/logo.webp" alt="Car Key Replacement Ponte Vedra" class="fb-logo" style="height: 32px; width: 32px; margin-bottom: 12px;">
         <p>Professional mobile automotive key replacement and programming service. We come to your location within a 60-mile radius of Ponte Vedra Beach, FL. Fast, reliable, no towing required.</p>
         <a href="tel:9049908577" class="footer-phone">📞 904-990-8577</a>
       </div>
@@ -1992,8 +2110,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2025 Car Key Replacement Ponte Vedra. All rights reserved. | 215 Tourside Dr, Unit 1498C, Ponte Vedra Beach, FL 32082</p>
-      <p>📞 <a href="tel:9049908577">904-990-8577</a> | <a href="https://carkeyreplacmentpontavedra.com" target="_blank" rel="noopener">carkeyreplacmentpontavedra.com</a></p>
+      <p>© 2026 Car Key Replacement Ponte Vedra. All rights reserved. | 215 Tourside Dr, Unit 1498C, Ponte Vedra Beach, FL 32082</p>  
     </div>
   </div>
 </footer>
