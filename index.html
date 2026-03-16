@@ -27,16 +27,16 @@
 
   /* ===== CSS VARIABLES ===== */
   :root {
-    --gold: #00c8e0;
-    --gold-light: #40dff0;
-    --gold-dim: rgba(0,200,224,0.12);
+    --gold: #10b981;
+    --gold-light: #34d399;
+    --gold-dim: rgba(16,185,129,0.12);
     --dark: #060d18;
     --dark2: #0b1525;
     --dark3: #101e30;
     --dark4: #172438;
     --text: #e4eef8;
     --text-muted: #7a9ab8;
-    --border: rgba(0,200,224,0.22);
+    --border: rgba(16,185,129,0.22);
     --radius: 4px;
     --shadow: 0 8px 40px rgba(0,0,0,0.7);
     --accent2: #ff6b2b;
@@ -498,6 +498,39 @@
     color: var(--text-muted);
   }
   .trust-item .ti-icon { font-size: 1.2rem; color: var(--gold); }
+
+  /* Mobile Trust Bar */
+  @media (max-width: 768px) {
+    .trust-bar {
+      padding: 16px 20px;
+    }
+    .trust-inner {
+      gap: 24px;
+      justify-content: flex-start;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+    }
+    .trust-inner::-webkit-scrollbar {
+      display: none;
+    }
+    .trust-item {
+      flex-shrink: 0;
+      font-size: 0.78rem;
+      white-space: nowrap;
+    }
+    .trust-item .ti-icon { font-size: 1rem; }
+  }
+  @media (max-width: 480px) {
+    .trust-inner {
+      gap: 20px;
+    }
+    .trust-item {
+      font-size: 0.75rem;
+    }
+    .trust-item .ti-icon { font-size: 0.9rem; }
+  }
 
   /* ===== ABOUT ===== */
   #about {
@@ -2110,7 +2143,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2026 Car Key Replacement Ponte Vedra. All rights reserved. | 215 Tourside Dr, Unit 1498C, Ponte Vedra Beach, FL 32082</p>  
+      <p>© 2026 Car Key Replacement Ponte Vedra. All rights reserved.</p>  
     </div>
   </div>
 </footer>
