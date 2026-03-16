@@ -532,6 +532,90 @@
     .trust-item .ti-icon { font-size: 0.9rem; }
   }
 
+  /* ===== DETAILED CONTENT SECTION ===== */
+  #detailed-content {
+    padding: 80px 0;
+    background: var(--dark);
+  }
+  .content-block {
+    max-width: 800px;
+    margin: 0 auto 60px;
+    text-align: left;
+  }
+  .content-block:last-child {
+    margin-bottom: 0;
+  }
+  .content-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 24px;
+    line-height: 1.3;
+  }
+  .content-text {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: var(--text-muted);
+    margin-bottom: 20px;
+  }
+  .service-list {
+    list-style: none;
+    margin: 20px 0;
+    padding-left: 0;
+  }
+  .service-list li {
+    position: relative;
+    padding-left: 28px;
+    margin-bottom: 12px;
+    font-size: 1rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+  }
+  .service-list li::before {
+    content: '•';
+    position: absolute;
+    left: 8px;
+    color: var(--gold);
+    font-weight: 700;
+    font-size: 1.2rem;
+  }
+
+  /* Mobile styles for detailed content */
+  @media (max-width: 768px) {
+    #detailed-content {
+      padding: 60px 0;
+    }
+    .content-block {
+      margin-bottom: 40px;
+    }
+    .content-title {
+      font-size: 1.6rem;
+      margin-bottom: 20px;
+    }
+    .content-text {
+      font-size: 1rem;
+      margin-bottom: 16px;
+    }
+    .service-list li {
+      font-size: 0.95rem;
+      margin-bottom: 10px;
+    }
+  }
+  @media (max-width: 480px) {
+    #detailed-content {
+      padding: 40px 0;
+    }
+    .content-title {
+      font-size: 1.4rem;
+    }
+    .service-list li {
+      padding-left: 24px;
+    }
+    .service-list li::before {
+      left: 6px;
+    }
+  }
+
   /* ===== ABOUT ===== */
   #about {
     padding: 100px 0;
@@ -1284,10 +1368,10 @@
         Mobile Service Available Now
       </div>
       <h1 class="hero-title">
-        Car Key Replacement
-        <em>Ponte Vedra</em>
+        Car Key Replacement Ponta Vedra<br>
+        <em>Fast Mobile Car Key Service</em>
       </h1>
-      <p class="hero-desc">Fast, reliable mobile automotive key replacement and programming. We come to you — no towing required. Serving Ponte Vedra Beach and within a 60-mile radius.</p>
+      <p class="hero-desc">If you are searching for car key replacement in Ponta Vedra, you need a service that is fast, reliable, and equipped to handle modern vehicle keys. Losing your car key or dealing with a broken key can happen at the worst possible time, and when it does, you need a professional solution without unnecessary delays.</p>
       <div class="hero-actions">
         <a href="tel:9049908577" class="btn-gold">
           📞 Call 904-990-8577
@@ -1336,6 +1420,86 @@
     </div>
   </div>
 </section>
+
+<!-- DETAILED CONTENT SECTION
+<section id="detailed-content">
+  <div class="container">
+    <div class="content-block reveal">
+      <h2 class="content-title">Professional Car Key Replacement in Ponta Vedra</h2>
+      <p class="content-text">Vehicle keys today are far more advanced than traditional metal keys. Many cars use transponder chips, remote systems, or push-to-start technology that require specialized equipment to program correctly.</p>
+      <p class="content-text">Our car key replacement service is designed to work with these systems safely and accurately. Instead of visiting a dealership or arranging towing, we can often complete the entire process directly where your vehicle is located.</p>
+      <p class="content-text">Our technicians can assist with many key-related problems including:</p>
+      <ul class="service-list">
+        <li>Lost car keys</li>
+        <li>Broken keys</li>
+        <li>Damaged key fobs</li>
+        <li>Smart key programming</li>
+        <li>Push-to-start key replacement</li>
+        <li>Spare key creation</li>
+        <li>Remote programming</li>
+        <li>Key system reset</li>
+      </ul>
+      <p class="content-text">Using professional automotive tools allows us to program new keys correctly and ensure the vehicle recognizes the replacement key.</p>
+    </div>
+
+    <div class="content-block reveal">
+      <h2 class="content-title">Lost Car Key Replacement</h2>
+      <p class="content-text">Losing your car key can create an immediate problem, especially if it was your only key. Many drivers believe the vehicle must be towed to a dealership in order to replace the key, but in many situations that is not necessary.</p>
+      <p class="content-text">Our lost car key replacement service allows us to create a new key directly at your location. This includes cutting a new key and programming it to communicate with the vehicle's security system.</p>
+      <p class="content-text">In many cases we can:</p>
+      <ul class="service-list">
+        <li>Generate a new key without the original</li>
+        <li>Program the vehicle to recognize the new key</li>
+        <li>Remove lost keys from the vehicle memory</li>
+        <li>Test the new key before finishing the service</li>
+      </ul>
+      <p class="content-text">This approach saves time and avoids the inconvenience of arranging transportation for the vehicle.</p>
+    </div>
+
+    <div class="content-block reveal">
+      <h2 class="content-title">Key Fob Replacement and Remote Programming</h2>
+      <p class="content-text">Many vehicles today rely on remote key fobs for locking, unlocking, and remote start functions. When a remote stops working or becomes damaged, it may prevent you from accessing or starting the vehicle.</p>
+      <p class="content-text">Our technicians provide key fob replacement and remote programming services designed for modern automotive systems. Using specialized equipment, we can program many remote systems so they function correctly with your vehicle.</p>
+      <p class="content-text">Key fob services include:</p>
+      <ul class="service-list">
+        <li>Remote key replacement</li>
+        <li>Key fob programming</li>
+        <li>Remote battery replacement</li>
+        <li>Signal troubleshooting</li>
+        <li>Remote synchronization</li>
+      </ul>
+      <p class="content-text">Correct programming ensures the vehicle responds properly to the remote and maintains its security system.</p>
+    </div>
+
+    <div class="content-block reveal">
+      <h2 class="content-title">Smart Keys and Push-to-Start Systems</h2>
+      <p class="content-text">Push-to-start vehicles use smart keys that communicate wirelessly with the vehicle. These keys contain electronic chips that must be programmed precisely in order to start the engine.</p>
+      <p class="content-text">If a smart key is lost, damaged, or not detected by the vehicle, a replacement must be programmed correctly to restore functionality.</p>
+      <p class="content-text">Our service includes:</p>
+      <ul class="service-list">
+        <li>Smart key replacement</li>
+        <li>Push-to-start key programming</li>
+        <li>Proximity key setup</li>
+        <li>Smart key troubleshooting</li>
+        <li>Additional smart key creation</li>
+      </ul>
+      <p class="content-text">Because these systems are more advanced, professional programming tools are required to complete the process correctly.</p>
+    </div>
+
+    <div class="content-block reveal">
+      <h2 class="content-title">Spare Car Key Service</h2>
+      <p class="content-text">One of the most common calls we receive is from drivers who have lost their only car key. Creating a spare key before this happens can help avoid an emergency situation.</p>
+      <p class="content-text">A spare key provides several advantages:</p>
+      <ul class="service-list">
+        <li>Prevents emergency lockouts</li>
+        <li>Saves time if the original key is lost</li>
+        <li>Reduces replacement costs</li>
+        <li>Provides backup access for multiple drivers</li>
+      </ul>
+      <p class="content-text">Most spare keys can be created quickly when the original key is still available. Our technicians can cut and program additional keys during the same visit.</p>
+    </div>
+  </div>
+</section> -->
 
 <!-- TRUST BAR -->
 <div class="trust-bar">
