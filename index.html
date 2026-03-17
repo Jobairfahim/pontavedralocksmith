@@ -294,6 +294,35 @@
     transition: color 0.2s, background 0.2s;
   }
   .mobile-menu a:hover { color: var(--gold); background: var(--gold-dim); }
+  .mobile-dropdown {
+    position: relative;
+  }
+  .mobile-services-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 600 !important;
+    color: var(--text) !important;
+  }
+  .dropdown-arrow {
+    font-size: 0.8rem;
+    transition: transform 0.3s ease;
+  }
+  .mobile-services-toggle.open .dropdown-arrow {
+    transform: rotate(180deg);
+  }
+  .mobile-services-menu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    background: rgba(0,0,0,0.2);
+    border-radius: 0 0 var(--radius) var(--radius);
+    margin-top: 4px;
+    text-align: left;
+  }
+  .mobile-services-menu.open {
+    max-height: 400px;
+  }
   .mobile-sub-link {
     font-size: 0.88rem !important;
     color: #8ab0cc !important;
@@ -1313,13 +1342,13 @@
           </a>
           <div class="dropdown-menu">
             <a href="#services"><span class="d-icon">🔑</span> Lost Car Key Replacement</a>
-            <a href="#services"><span class="d-icon">📡</span> Key Fob &amp; Remote Programming</a>
-            <a href="#services"><span class="d-icon">✨</span> Smart Key &amp; Push-to-Start</a>
-            <a href="#services"><span class="d-icon">🔧</span> Ignition Repair &amp; Replacement</a>
-            <a href="#services"><span class="d-icon">🚗</span> Spare Car Key Service</a>
-            <a href="#services"><span class="d-icon">📱</span> Mobile On-Site Service</a>
-            <a href="#services"><span class="d-icon">🔐</span> Transponder Key Programming</a>
-            <a href="#services"><span class="d-icon">⚡</span> Emergency Key Service</a>
+            <a href="#lost-key-replacement"><span class="d-icon">📡</span> Key Fob &amp; Remote Programming</a>
+            <a href="#smart-key-replacement"><span class="d-icon">✨</span> Smart Key &amp; Push-to-Start</a>
+            <a href="#ignition-repair"><span class="d-icon">🔧</span> Ignition Repair &amp; Replacement</a>
+            <a href="#spare-key-service"><span class="d-icon">🚗</span> Spare Car Key Service</a>
+            <a href="#mobile-service"><span class="d-icon">📱</span> Mobile On-Site Service</a>
+            <a href="#transponder-programming"><span class="d-icon">🔐</span> Transponder Key Programming</a>
+            <a href="#emergency-service"><span class="d-icon">⚡</span> Emergency Key Service</a>
           </div>
         </li>
         <li><a href="#about">About</a></li>
@@ -1340,15 +1369,21 @@
 <!-- MOBILE MENU -->
 <div class="mobile-menu" id="mobileMenu">
   <a href="#home" onclick="closeMenu()">Home</a>
-  <a href="#services" onclick="closeMenu()">Services</a>
-  <a href="#services" onclick="closeMenu()" class="mobile-sub-link">🔑 Lost Car Key Replacement</a>
-  <a href="#services" onclick="closeMenu()" class="mobile-sub-link">📡 Key Fob &amp; Remote Programming</a>
-  <a href="#services" onclick="closeMenu()" class="mobile-sub-link">✨ Smart Key &amp; Push-to-Start</a>
-  <a href="#services" onclick="closeMenu()" class="mobile-sub-link">🔧 Ignition Repair &amp; Replacement</a>
-  <a href="#services" onclick="closeMenu()" class="mobile-sub-link">🚗 Spare Car Key Service</a>
-  <a href="#services" onclick="closeMenu()" class="mobile-sub-link">📱 Mobile On-Site Service</a>
-  <a href="#services" onclick="closeMenu()" class="mobile-sub-link">🔐 Transponder Key Programming</a>
-  <a href="#services" onclick="closeMenu()" class="mobile-sub-link">⚡ Emergency Key Service</a>
+  <div class="mobile-dropdown">
+    <a href="#" onclick="toggleMobileServices(event); return false;" class="mobile-services-toggle">
+      Services <span class="dropdown-arrow">▼</span>
+    </a>
+    <div class="mobile-services-menu" id="mobileServices">
+      <a href="#services" onclick="closeMenu()" class="mobile-sub-link">🔑 Lost Car Key Replacement</a><br style="margin-bottom: 10px;">
+      <a href="#lost-key-replacement" onclick="closeMenu()" class="mobile-sub-link">📡 Key Fob &amp; Remote Programming</a><br style="margin-bottom: 10px;">
+      <a href="#smart-key-replacement" onclick="closeMenu()" class="mobile-sub-link">✨ Smart Key &amp; Push-to-Start</a><br style="margin-bottom: 10px;">
+      <a href="#ignition-repair" onclick="closeMenu()" class="mobile-sub-link">🔧 Ignition Repair &amp; Replacement</a><br style="margin-bottom: 10px;">
+      <a href="#spare-key-service" onclick="closeMenu()" class="mobile-sub-link">🚗 Spare Car Key Service</a><br style="margin-bottom: 10px;">
+      <a href="#mobile-service" onclick="closeMenu()" class="mobile-sub-link">📱 Mobile On-Site Service</a><br style="margin-bottom: 10px;">
+      <a href="#transponder-programming" onclick="closeMenu()" class="mobile-sub-link">🔐 Transponder Key Programming</a><br>
+      <a href="#emergency-service" onclick="closeMenu()" class="mobile-sub-link">⚡ Emergency Key Service</a>
+    </div>
+  </div>
   <a href="#about" onclick="closeMenu()">About</a>
   <a href="#reviews" onclick="closeMenu()">Reviews</a>
   <a href="#faq" onclick="closeMenu()">FAQ</a>
@@ -1521,7 +1556,7 @@
       <p class="section-sub">From lost keys to smart key programming, we handle all modern vehicle key systems with professional-grade equipment.</p>
     </div>
     <div class="services-grid">
-      <div class="service-card reveal">
+      <div class="service-card reveal" id="lost-key-replacement">
         <span class="sc-icon">🔑</span>
         <div class="sc-title">Lost Car Key Replacement</div>
         <p class="sc-desc">Losing your car key can create an immediate problem, especially if it was your only key. We create and program a new key directly at your location — no towing necessary. We can generate a new key without the original, program the vehicle, and remove lost keys from vehicle memory.</p>
@@ -1531,7 +1566,7 @@
           <span class="sc-tag">Key Memory Deletion</span>
         </div>
       </div>
-      <div class="service-card reveal">
+      <div class="service-card reveal" id="key-fob-programming">
         <span class="sc-icon">📡</span>
         <div class="sc-title">Key Fob &amp; Remote Programming</div>
         <p class="sc-desc">When a remote stops working or becomes damaged, it may prevent you from accessing or starting the vehicle. We provide key fob replacement and remote programming for modern automotive systems including signal troubleshooting and remote synchronization.</p>
@@ -1541,7 +1576,7 @@
           <span class="sc-tag">Battery Replacement</span>
         </div>
       </div>
-      <div class="service-card reveal">
+      <div class="service-card reveal" id="smart-key-replacement">
         <span class="sc-icon">✨</span>
         <div class="sc-title">Smart Keys &amp; Push-to-Start</div>
         <p class="sc-desc">Push-to-start vehicles use smart keys that communicate wirelessly with the vehicle. These keys contain electronic chips that must be programmed precisely to start the engine. We handle smart key replacement, proximity key setup, and push-to-start programming.</p>
@@ -1551,7 +1586,7 @@
           <span class="sc-tag">Smart Key Setup</span>
         </div>
       </div>
-      <div class="service-card reveal">
+      <div class="service-card reveal" id="transponder-programming">
         <span class="sc-icon">🔐</span>
         <div class="sc-title">Transponder Key Programming</div>
         <p class="sc-desc">Most vehicles manufactured in the last 20 years use transponder keys with a small electronic chip that communicates with the vehicle's immobilizer. If not programmed correctly, the vehicle won't start even if the key fits. We handle all transponder chip programming and immobilizer resets.</p>
@@ -1561,7 +1596,7 @@
           <span class="sc-tag">Spare Keys</span>
         </div>
       </div>
-      <div class="service-card reveal">
+      <div class="service-card reveal" id="ignition-repair">
         <span class="sc-icon">🔧</span>
         <div class="sc-title">Ignition Repair &amp; Replacement</div>
         <p class="sc-desc">Sometimes the problem is not the key itself but the ignition cylinder. If the key won't turn, becomes stuck, or breaks inside the ignition, we diagnose and repair or replace the ignition system. Early repair prevents further damage to the vehicle's starting system.</p>
@@ -1571,7 +1606,7 @@
           <span class="sc-tag">Broken Key Extraction</span>
         </div>
       </div>
-      <div class="service-card reveal">
+      <div class="service-card reveal" id="spare-key-service">
         <span class="sc-icon">🚗</span>
         <div class="sc-title">Spare Car Key Service</div>
         <p class="sc-desc">Creating a spare key before an emergency happens can save significant time and money. Having a spare key prevents emergency lockouts, reduces replacement costs, and provides backup access for multiple drivers. Most spare keys can be cut and programmed during the same visit.</p>
@@ -1581,7 +1616,7 @@
           <span class="sc-tag">Multiple Keys</span>
         </div>
       </div>
-      <div class="service-card reveal">
+      <div class="service-card reveal" id="laser-cut-keys">
         <span class="sc-icon">✂️</span>
         <div class="sc-title">Laser Cut &amp; High-Security Keys</div>
         <p class="sc-desc">Some vehicles use laser cut (sidewinder) keys with grooves cut along the center of the blade. These require specialized machines to cut accurately and offer improved security. We have professional equipment to cut high-security keys for many modern vehicles.</p>
@@ -1591,7 +1626,7 @@
           <span class="sc-tag">Precision Cut</span>
         </div>
       </div>
-      <div class="service-card reveal">
+      <div class="service-card reveal" id="emergency-service">
         <span class="sc-icon">⚡</span>
         <div class="sc-title">Emergency Car Key Service</div>
         <p class="sc-desc">Car key problems rarely happen at convenient times. Our emergency service helps drivers quickly and safely regain access to their vehicles. We assist with keys locked in the car, lost vehicle keys, broken keys, remotes not working, and ignition problems.</p>
@@ -1601,7 +1636,7 @@
           <span class="sc-tag">Roadside</span>
         </div>
       </div>
-      <div class="service-card reveal">
+      <div class="service-card reveal" id="mobile-service">
         <span class="sc-icon">📱</span>
         <div class="sc-title">Mobile On-Site Service</div>
         <p class="sc-desc">Our technicians travel directly to your vehicle — at your home, workplace, parking lot, shopping center, apartment complex, or roadside. We arrive equipped with all necessary tools and programming devices to complete most services in a single visit.</p>
@@ -2319,7 +2354,6 @@
   </span>
   <span class="float-call-label">
     <span class="float-call-text">Call Now</span>
-    <span class="float-call-num">904-990-8577</span>
   </span>
 </a>
 
@@ -2404,6 +2438,22 @@
   function closeMenu() {
     hamburger.classList.remove('open');
     mobileMenu.classList.remove('open');
+    // Close mobile services dropdown
+    const mobileServices = document.getElementById('mobileServices');
+    const servicesToggle = document.querySelector('.mobile-services-toggle');
+    if (mobileServices) mobileServices.classList.remove('open');
+    if (servicesToggle) servicesToggle.classList.remove('open');
+  }
+  
+  function toggleMobileServices(event) {
+    event.preventDefault();
+    const mobileServices = document.getElementById('mobileServices');
+    const servicesToggle = document.querySelector('.mobile-services-toggle');
+    
+    if (mobileServices && servicesToggle) {
+      mobileServices.classList.toggle('open');
+      servicesToggle.classList.toggle('open');
+    }
   }
   document.addEventListener('click', (e) => {
     if (!hamburger.contains(e.target) && !mobileMenu.contains(e.target)) closeMenu();
